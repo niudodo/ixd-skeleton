@@ -1,0 +1,99 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+.jumbotron {
+	position: relative;
+	background: none;
+}
+
+.jumbotron:after {
+     content:"";
+     background: url("../images/lorempixel.jumbotron.jpeg");
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;	
+}
+
+.jumbotron p {
+     color: #6e6e6e;
+}
+
+.jumbotron button{
+     align-self: center;
+}
+
+.dropdown {
+     position: absolute;
+     right:0;
+     top:13px;
+     align-content: right;
+}
+.dropdown-content{
+     display: none;
+     position: absolute;
+     top:40px;
+     min-width: 160px;
+     right:0;
+     z-index:1;
+}
+
+.dropdown-context a{
+     color:black;
+     padding:12px 16px;
+     display: inline-block;
+}
+
+.dropdown-content button{
+    width: 150px;
+    height:45px;
+    text-align: left;
+}
+
+.topright {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+}
+
+.titleCenter {
+  position: absolute;
+  display:inline-block;
+  left: 46%;
+  right:auto;
+  top: 0px;
+  bottom: 0px;
+  text-align: center;
+  font-size: 35px;
+}
+
+#strtStryln {
+    left:40%;
+    position: absolute;
+    width:300px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.jumbotron h1{
+    text-align: center;
+}
+
+
+
+
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{display: block;}
+
