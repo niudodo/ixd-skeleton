@@ -16,19 +16,17 @@
 <body>
 	<!-- This is the top panel of website with bottom -->
 	<div class="panel panel-default">
-		<div class="panel-body">
-			<a href="#"><i class="material-icons" 
+		<div class="panel-heading text-center panel-relative">
+			<a href="#"><i class="material-icons prev-icon" 
 				style="color:black">
 				navigate_before
 			</i></a>
-			<a href="#"><i class="material-icons" 
+			<a href="#"><i class="material-icons home-icon" 
 				style="color:black">
 				home
 			</i></a>
 
-			<div class="titleCenter">
-				Home
-			</div>
+			<h4>Home</h4>
 
 			<div class="dropdown">
 				<button id="menu" class="topright">
@@ -67,11 +65,11 @@
 		<div class="jumbotron">
 			<h1>Mind</h1>
 		</div>
-		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" value="Start Storyline!">
+
+		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline!">
 		</input>
+
 	</div>
-
-
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 </body>

@@ -67,26 +67,28 @@
   right: 40px;
 }
 
-.titleCenter {
-  position: absolute;
-  display:inline-block;
-  left: 46%;
-  right:auto;
-  top: 0px;
-  bottom: 0px;
-  text-align: center;
-  font-size: 35px;
+.panel-relative {
+  position: relative;
 }
 
 #strtStryln{
-    margin:0;
-    padding:0;
-    position:absolute;
-    left:45%;
+    align-self: center;
+    width: 300px;
+    height:40px;
+    font-size: 25px;
 }
 
 .jumbotron h1{
     text-align: center;
+}
+
+.home-icon {
+  position: absolute;
+  left:40px;
+}
+.prev-icon{
+  position: absolute;
+  left:1%;
 }
 
 
