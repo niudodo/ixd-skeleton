@@ -2,8 +2,9 @@
 /*
  * GET home page.
  */
-
+var data = require("../storyline.json");
 exports.view = function(req, res){
+	console.log(data);
   res.render("index", {
   	"projects": [
   {	"name": "Calloge", 

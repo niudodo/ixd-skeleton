@@ -1,5 +1,7 @@
+var data = require("../storyline.json");
+
 exports.viewStoryLine = function(req, res) { 
   // controller code goes here 
-    res.render('storyline');
-
+    console.log(data);
+    res.render('storyline', data);
 }; 
