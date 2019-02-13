@@ -9,6 +9,7 @@
 	color: #CC00AA;
 }
 
+
 .jumbotron {
 	position: relative;
 	background: none;
@@ -76,6 +77,8 @@
     width: 300px;
     height:40px;
     font-size: 25px;
+    border-radius: 4px;
+    background-color:#f4bc42;
 }
 
 .jumbotron h1{
@@ -91,7 +94,9 @@
   left:1%;
 }
 
-
+.button{
+  background-color:#f4bc42;
+}
 
 
 /* show the dropdown menu on hover */
