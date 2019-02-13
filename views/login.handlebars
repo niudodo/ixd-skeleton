@@ -1,0 +1,75 @@
+<!doctype html>
+<meta name ="viewport" content="width=device-width,initial-scale= 1.0">
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<!-- for icon library-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link href="/css/introHCI.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- This is the top panel of website with bottom -->
+	<div class="panel panel-default">
+		<div class="panel-heading text-center panel-relative">
+			<a href="#"><i class="material-icons prev-icon" 
+				style="color:black">
+				navigate_before
+			</i></a>
+			<a href="#"><i class="material-icons home-icon" 
+				style="color:black">
+				home
+			</i></a>
+
+			<h4>Home</h4>
+
+			<div class="dropdown">
+				<button id="menu" class="topright">
+				<i class="material-icons" style="color:black">
+					add_circle_outline
+				</i></button>
+				<div class="dropdown-content">
+					<button style="height:50px;width:50px ><a href="#"><i class="material-icons" 
+						style="color:black">
+						person
+					</i> Profile
+					</a></button>
+					<button style="height:50px;width:50px ><a href="#"><i class="material-icons"
+						style="color: black">
+						date_range
+					</i>Calendar
+					</a></button>
+					<button style="height:50px;width:50px ><a href="#"><i class="material-icons"
+						style="color: black">
+						assessment
+					</i>Statstic</a></button>
+					<button style="height:50px;width:50px ><a href="#"><i class="material-icons"
+						style="color: black">
+						toys
+					</i>Advices</a></button>
+					<button style="height:50px;width:50px ><a href="#"><i class="material-icons"
+						style="color: black">
+						settings
+					</i>Setting</a></button>
+				</div><!--end of dropdown context-->
+			</div><!--end of dropdown-->
+		</div><!--end of panel body-->
+	</div><!--end of panel-->
+	
+	<div class="container">
+		<div class="jumbotron">
+			<h2>Welcome back!</h2>
+		</div>
+		<input type=button id="username" onclick="window.location.href='/Login';" class= "form-control" placeholder="Username">
+		</input>
+
+	</div>
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
