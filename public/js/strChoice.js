@@ -1,4 +1,4 @@
-var data = [
+var data =  [
 			{	image: "/images/2019-02-07",
 				story: "When your friend randomly start crying", 
 				choice1: "cry with her",
@@ -13,9 +13,7 @@ var data = [
 				choice2: "ask him if anything is wrong",
 				choice3: "being serious and ignore him",
 				choice4: "punch him"
-			}]
-
-
+			}];
 
 var num = 0;  
 
@@ -45,5 +43,8 @@ function choicesfunction() {
 
 function buttonClick(e){
 	e.preventDefault();
-	choicesfunction();
+	var delayInMilliSec = 1000;
+	$(".choices").hide(500);
+	setTimeout(choicesfunction, delayInMilliSec);
+	$(".choices").show(500);
 }

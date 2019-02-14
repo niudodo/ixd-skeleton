@@ -1,0 +1,18 @@
+{"strChoice":[
+		{
+			"image": "/images/2019-02-07",
+			"story": "When your friend randomly start crying", 
+			"choice1": "cry with her",
+			"choice2": "ask her if anything is wrong",
+			"choice3": "being serious and ignore her",
+			"choice4": "punch her"
+		}, 
+		{
+			"image": "/images/2019-02-07",
+			"story": "When your friend randomly start crying", 
+			"choice1": "cry with him",
+			"choice2": "ask him if anything is wrong",
+			"choice3": "being serious and ignore him",
+			"choice4": "punch him"
+		}]
+}
