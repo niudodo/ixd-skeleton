@@ -1,0 +1,106 @@
+<!doctype html>
+<meta name ="viewport" content="width=device-width,initial-scale= 1.0">
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <!-- for icon library-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link href="/css/introHCI.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- This is the top panel of website with bottom -->
+  <!-- This is the top panel of website with bottom -->
+  <div class="panel panel-default">
+    <div class="panel-heading text-center panel-relative">
+      <a href="/"><i class="material-icons prev-icon" 
+        style="color:black">
+        navigate_before
+      </i></a>
+      <a href="/"><i class="material-icons home-icon" 
+        style="color:black">
+        home
+      </i></a>
+
+      <h4>Advice</h4>
+
+      <div class="dropdown">
+        <button id="menu" class="topright" style="border: 0px">
+        <i class="material-icons" style="color:black;">
+          menu
+        </i></button>
+        <div class="dropdown-content">
+          <button style="height:50px;width:50px ><a href="#"><i class="material-icons" 
+            style="color:black">
+            person
+          </i> Profile
+          </a></button>
+         
+          <button style="height:50px;width:50px ><a href="#"><i class="material-icons"
+            style="color: black">
+            assessment
+          </i>Statstic</a></button>
+          <button style="height:50px;width:50px ><a href="#"><i class="material-icons"
+            style="color: black">
+            toys
+          </i>Advices</a></button>
+          <button style="height:50px;width:50px ><a href="#"><i class="material-icons"
+            style="color: black">
+            settings
+          </i>Setting</a></button>
+        </div><!--end of dropdown context-->
+      </div><!--end of dropdown-->
+    </div><!--end of panel body-->
+  </div><!--end of panel-->
+  
+  <!--start of Last Advice-->
+  <div class="container">
+    <div class="jumbotron" style="border: 2px; border-style: solid; border-color: #E6E6E6">
+      <h2 style="color: #F4BC42">Last Advice:</h2>
+
+      <h4>
+        You logged: FRIEND TROUBLE
+      </h4>
+
+        <p>
+          "Why wait for them to approach you? Start a conversation. It will only give you answers."
+        </p>
+      <!--Last advice: complete button-->
+      <input type=button id="completeLastAdvice" onclick="window.location.href='/';" class="left-block" value="I Did It!" style="border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6">
+      </input>
+      <!--Last advice: incomplete button-->
+      <input type=button id="NoToLastAdvice" onclick="window.location.href='/';" class="right-block" value="I Didn't" style="float: right; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6">
+      </input>
+    </div>
+
+    <!--Past Advice Section-->
+    <h4 style="float: right;">sort by: DATE</h4>
+    <h3 style="color: #F4BC42">Past Advice</h3>
+
+      <hr>
+
+      <p style="float: right; color: #E6E6E6;">2/13/19</p>
+      <h5>FAMILY ISSUES</h5>
+        <p>"Don't keep it all inside. Your parents will be happy to hear your perspective and you'll feel better after, too!"</p>
+        
+      <hr>
+
+      <p style="float: right; color: #E6E6E6;">2/11/19</p>
+      <h5>FRIEND TROUBLE</h5>
+        <p>"Sometimes you have to own up to your mistakes. You can only grow from it!"</p>
+
+      <hr>
+
+      <p style="float: right; color: #E6E6E6;">2/9/19</p>
+      <h5>RELATIONSHIP BLUES</h5>
+        <p>"Do you fully understand why they are mad? Sometimes it's best to relfect before taking a step in the wrong direction."</p>
+  </div>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

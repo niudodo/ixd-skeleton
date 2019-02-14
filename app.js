@@ -13,6 +13,7 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 var storyline = require('./routes/storyline');
 var login = require('./routes/login')
+var advice = require('./routes/advice')
 
 
 var app = express();
@@ -42,6 +43,7 @@ app.get('/', index.view);
 // app.get('/users', user.list);
 app.get('/storyline', storyline.viewStoryLine)
 app.get('/login', login.viewLogIn)
+app.get('/advice', advice.viewAdvice)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
