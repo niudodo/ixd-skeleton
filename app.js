@@ -13,7 +13,7 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 var storyline = require('./routes/storyline');
 var login = require('./routes/login')
-var advice = require('./routes/advice')
+var advices = require('./routes/advices')
 var profile = require('./routes/profile')
 
 
@@ -44,7 +44,7 @@ app.get('/', index.view);
 // app.get('/users', user.list);
 app.get('/storyline', storyline.viewStoryLine)
 app.get('/login', login.viewLogIn)
-app.get('/advice', advice.viewAdvice)
+app.get('/advices', advices.viewAdvice)
 app.get('/profile', profile.viewProfile)
 
 http.createServer(app).listen(app.get('port'), function(){

@@ -1,8 +1,8 @@
 
 /*
- * GET advice page.
+ * GET advices page.
  */
 
 exports.viewAdvice = function(req, res){
-  res.render('advice');
+  res.render('advices');
 };
