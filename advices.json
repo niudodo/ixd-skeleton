@@ -8,5 +8,12 @@
 			"name":"friend-temper-control2",
 			"description":"think for 1 min before yell at your friend",
 			"status":"uncomplete"
-		}]
+		},
+
+		{
+			"name":"family-issue",
+			"description":"Don't keep it all inside. Your parents will be happy to hear your perspective and you'll feel better after, too!",
+			"status":"uncomplete"
+		}
+]
 }
