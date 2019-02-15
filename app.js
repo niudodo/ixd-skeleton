@@ -12,9 +12,10 @@ var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
 var storyline = require('./routes/storyline');
-var login = require('./routes/login')
-var advices = require('./routes/advices')
-var profile = require('./routes/profile')
+var login = require('./routes/login');
+var advices = require('./routes/advices');
+var profile = require('./routes/profile');
+var statistics = require('./routes/statistics');
 
 
 var app = express();
@@ -42,10 +43,11 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
-app.get('/storyline', storyline.viewStoryLine)
-app.get('/login', login.viewLogIn)
-app.get('/advices', advices.viewAdvice)
-app.get('/profile', profile.viewProfile)
+app.get('/storyline', storyline.viewStoryLine);
+app.get('/login', login.viewLogIn);
+app.get('/advices', advices.viewAdvice);
+app.get('/profile', profile.viewProfile);
+app.get('/statistics', statistics.viewStatistics);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

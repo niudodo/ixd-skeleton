@@ -18,7 +18,7 @@
   <!-- This is the top panel of website with bottom -->
   <div class="panel panel-default">
     <div class="panel-heading text-center panel-relative">
-      <a href="javascript:history.back()"><i class="material-icons prev-icon" 
+      <a href="/"><i class="material-icons prev-icon" 
         style="color:black">
         navigate_before
       </i></a>
@@ -27,7 +27,7 @@
         home
       </i></a>
 
-      <h4>Profile</h4>
+      <h4>Statistics</h4>
 
       <div class="dropdown">
         <button id="menu" class="topright" style="border: 0px">
@@ -57,35 +57,38 @@
     </div><!--end of panel body-->
   </div><!--end of panel-->
   
-  <!--start of Last Advice-->
+  <!--start of Weekly Statistics-->
   <div class="container">
     <div class="jumbotron" style="border: 2px; border-style: solid; border-color: #E6E6E6">
       <center>
-      <h2 style="color: #F4BC42">Profile</h2>
-    </center>
+        <h2 style="color: #F4BC42">This Week</h2>
+      </center>
+
+    <!-- Add This week's statistics chart here-->
+      <h3>Average Score this Week: 9/10</h3>
+      <img src="/images/graph.png" class="img-responsive"> </img>
     </div>
+    <!-- Add Average weekly score from storyline, % improved from previous week, etc-->
+
+    <div>
+      <table>
+        <tr>
+          <th>Friends Relationship</th>
+          <th>8/10</th>
+        </tr>
+        <tr>
+          <th>Family Relationship</th>
+          <th>9/10</th>
+        </tr>
+        <tr>
+          <th>School Life</th>
+          <th>9/10</th>
+        </tr>
+      </table>
+    </div>
+  </div>
 
 
-      <center>
-      <img src="/images/profilepic.PNG" alt="HTML5 Icon" style="width:200px;height:200px;">
-    </center>
-      <hr>
-
-      <p style="float: right; ">Carlo Lopez De La Fuente</p>
-      <h3>Name</h3>
-        
-        
-      <hr>
-
-      <p style="float: right; ">Create better relationships with friends</p>
-      <h4>Personal Goal</h4>
-        
-
-      <hr>
-
-      <p style="float: right;">Relationship, Friends, Family</p>
-      <h4>Needs Work</h4>
-          </div>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
 </body>
