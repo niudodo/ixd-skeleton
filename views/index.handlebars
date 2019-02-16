@@ -57,15 +57,22 @@
 	</div><!--end of panel-->
 	
 	<div class="container">
-		<h4 style="text-align: center">Test you Mental Health</h4>
-		<h4 style="text-align: center">with choices in storyline..</h4>
-		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline!">
+		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline">
+		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
 		</input>
+
 		<hr>
 
-		<div>
-			<img src="/images/graph.png" class="img-responsive"> </img>
-			<button><a href="/advices">Advices</a></button>
+		<!-- Quick statistics section -->
+		<h3>How you've felt this week:</h3>
+		<img src="/images/graph.png" class="img-responsive" style="padding: 10px;" onclick="window.location.href='/statistics'"> </img>
+
+		<hr>
+
+		<!-- Last advice section -->
+		<div style="padding: 5px; border: 2px; border-style: solid; border-color: #E6E6E6; margin-bottom: 10px;">
+			
+			<button><a href="/advices">Last Advice</a></button>
 			<table>
 				{{#each advices}}
 					<tr>
@@ -79,6 +86,7 @@
 		</div>
 
 	</div>
+
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 </body>
