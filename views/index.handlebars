@@ -15,48 +15,16 @@
 
 <body>
 	<!-- This is the top panel of website with bottom -->
-	<div class="navbar" >
+	<div class="navbar topNavbar" >
 		<div class="text-center">
-			<a href="javascript:history.back()" id="prev"><i class="material-icons prev-icon" 
-				style="color:black">
+			<a href="javascript:history.back()" id="prev"><i class="material-icons prev-icon">
 				navigate_before
 			</i></a>
-			
 			<h4>Home</h4>
-
-			<div class="dropdown">
-				<button id="menu" class="topright" style="border: 0px">
-				<i class="material-icons" style="color:black;">
-					menu
-				</i></button>
-				<div class="dropdown-content">
-					<button>
-					<a href="/profile"><i class="material-icons" style="color:black">
-						person
-					</i> Profile
-					</a></button>
-					
-					<button><a href="/statistics"><i class="material-icons" style="color: black">
-						assessment
-					</i>Statistic</a></button>
-					<button><a href="/advices"><i class="material-icons"
-						style="color: black">
-						toys
-					</i>Advices</a></button>
-					<button><a href="#"><i class="material-icons"
-						style="color: black">
-						settings
-					</i>Setting</a></button>
-					<a href="/login"><i class="material-icons home-icon" style="color:black">
-						exit_to_app
-					</i></a>
-
-				</div><!--end of dropdown context-->
-			</div><!--end of dropdown-->
 		</div><!--end of panel body-->
 	</div><!--end of panel-->
 	
-	<div class="container" style="margin-top:65px">
+	<div class="container" style="margin-top:65px; margin-bottom: 65px">
 		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline">
 		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
 		</input>
@@ -85,6 +53,22 @@
 			</table>
 		</div>
 	</div>
+	<!--this is the buttom nav bar -->
+	<div class="navbar bottomNavbar" >	
+		<a href="/profile"><i class="material-icons" >
+			person
+		</i> Profile
+		</a>
+		<a href="/statistics"><i class="material-icons" >
+			assessment
+		</i>Statistic</a>
+		<a href="/advices"><i class="material-icons">
+			toys
+		</i>Advices</a>
+		<a href="#"><i class="material-icons">
+			settings
+		</i>Setting</a>
+	</div><!--en
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
