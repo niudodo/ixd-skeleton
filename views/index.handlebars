@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 	<link href="/css/introHCI.css" rel="stylesheet">
+	{{>facebook}}
+	<script src="/js/facebook.js"></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
 		</div><!--end of panel body-->
 	</div><!--end of panel-->
 	
-	<div class="container" style="margin-top:65px; margin-bottom: 65px">
+	<div class="container">
 		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline">
 		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
 		</input>
@@ -39,7 +41,6 @@
 
 		<!-- Last advice section -->
 		<div style="padding: 5px; border: 2px; border-style: solid; border-color: #E6E6E6; margin-bottom: 10px;">
-			
 			<button><a href="/advices">Last Advice</a></button>
 			<table>
 				{{#each advices}}
@@ -68,7 +69,7 @@
 		<a href="#"><i class="material-icons">
 			settings
 		</i>Setting</a>
-	</div><!--en
+	</div><!--end of buttom nav bar -->
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>

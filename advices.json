@@ -1,19 +1,28 @@
 { "advices" : [
 		{
-			"name":"friend-temper-control1",
+			"type":"FRIEND TEMPER",
 			"description":"try to be nice to your friend",
-			"status":"incomplete"
+			"status":"incomplete",
+			"date":"2/13/19"
 		},
 		{
-			"name":"friend-temper-control2",
+			"type":"FRIEND TEMPER",
 			"description":"think for 1 min before yell at your friend",
-			"status":"incomplete"
+			"status":"complete",
+			"date":"2/13/19"
 		},
 
 		{
-			"name":"family-issue",
+			"type":"FAMILY ISSUE",
 			"description":"Don't keep it all inside. Your parents will be happy to hear your perspective and you'll feel better after, too!",
-			"status":"incomplete"
+			"status":"incomplete",
+			"date":"2/13/19"
+		},
+		{
+			"type":"SELF GROW",
+			"description":"Sometimes you have to own up to your mistakes. You can only grow from it!",
+			"status":"complete",
+			"date":"2/13/19"
 		}
 ]
 }

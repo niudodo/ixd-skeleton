@@ -61,6 +61,14 @@
   width: 25%; 
   text-align: center; 
 }
+.home-icon {
+  position: absolute;
+  left:40px;
+}
+.prev-icon{
+  position: absolute;
+  left:1%;
+}
 
 /* Add a background color on mouse-over */
 .navbar a:hover {
@@ -85,6 +93,12 @@ i {
   font-size: 2.5em;
   color: white;
 }
+
+.container {
+  margin-top:65px; 
+  margin-bottom: 65px;
+}
+
 
 .dropdown {
      position: absolute;
@@ -139,14 +153,7 @@ i {
     text-align: center;
 }
 
-.home-icon {
-  position: absolute;
-  left:40px;
-}
-.prev-icon{
-  position: absolute;
-  left:1%;
-}
+
 
 /* show the dropdown menu on hover */
 .dropdown:hover .dropdown-content{display: block;}

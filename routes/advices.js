@@ -2,7 +2,7 @@
 /*
  * GET advices page.
  */
-
+var advices = require("../advices.json");
 exports.viewAdvice = function(req, res){
-  res.render('advices');
+  res.render('advices',advices);
 };
