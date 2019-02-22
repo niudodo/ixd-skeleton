@@ -17,9 +17,9 @@
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=309167696616775&autoLogAppEvents=1"></script>
 	<!-- This is the top panel of website with bottom -->
-	
-	
 	<div class="container">
 		<div class="jumbotron">
 			<h2 style="text-align: center;">Welcome back!</h2>
@@ -36,7 +36,7 @@
 		</form>
 		<p class="facebookLogin">
 			Please login through Facebook
-			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			<fb:login-button data-size="large" scope="public_profile,email" onlogin="checkLoginState();">
 			</fb:login-button>
 		</p>
 
