@@ -71,7 +71,6 @@
 
       <center>
       <div id="fb" class="profile">
-      <h3>Profile Photo</h3>
       <img id="facebookPhoto" class='img-responsive' src="http://hci.stanford.edu/courses/cs547/Resources/Pictures/klemmer_grad.jpg" />
     </div>
     </center>
@@ -79,14 +78,13 @@
 
       <p id="profileName" style="float: right; ">Carlo Lopez De La Fuente</p>
       <h3>Name</h3>
-        
-        
       <hr>
 
-      <p style="float: right; ">Create better relationships with friends</p>
+      
       <h4>Personal Goal</h4>
-        
-
+      {{#each goals}}
+        <p style="float: right; ">{{goalContext}}</p>  
+      {{/each}}
       <hr>
 
       <p style="float: right;">Relationship, Friends, Family</p>
@@ -95,5 +93,6 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/profileFB.js"></script>
+  <script src="/add.js"></script>
 </body>
 </html>

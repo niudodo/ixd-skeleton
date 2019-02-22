@@ -38,10 +38,12 @@
 		<form id="addFriendForm" role="form" method="get" action="/add">
 			
 		    <div class="form-group">
-		      <label for="name">Add Personal Goal:</label>
-		      <input type="text" class="form-control" id="name" placeholder="Ex: Create more friends" name="name">
+		      <label for="goalContext">Add Personal Goal:</label>
+		      <input type="text" class="form-control" id="name" placeholder="Ex: Create more friends" name="goalContext">
 		    </div>
+		    
 		    <input type="submit" id="submitBtn" class="btn btn-default" value="Add"></input>
+		    
 		    <div class="form-group">
 		      <label for="description">Add Something You Want to Work on:</label>
 		      <input type="text" class="form-control" id="description" placeholder="Ex: Being Nicer " name="description">
@@ -71,6 +73,6 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script src="/js/graph.js"></script>
+	<script src="/add.js"></script>
 </body>
 </html>
