@@ -52,6 +52,7 @@ app.get('/profile', profile.viewProfile);
 app.get('/statistics', statistics.viewStatistics);
 app.get('/settings', settings.viewSettings);
 app.get('/add',add.addGoals);
+app.get('/add',add.addWorking);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

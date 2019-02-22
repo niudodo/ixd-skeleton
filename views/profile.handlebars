@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <link href="/css/introHCI.css" rel="stylesheet">
-  <script src="/js/introHCI.js"></script>
+  <!--<script src="/js/introHCI.js"></script>-->
   {{>facebook}}
   <script src="/js/facebook.js"></script>
 </head>
@@ -61,10 +61,12 @@
         <br>
       {{/each}}
       <hr>
-
-      <p style="float: right;">Relationship, Friends, Family</p>
       <h4>Needs Work</h4>
-          </div>
+      {{#each working}}
+        <p style="float: right; ">{{workingContext}}</p>  
+        <br>
+      {{/each}}
+    </div>
     <div class="navbar bottomNavbar" >  
     <a href="/profile"><i class="material-icons" >
       person
@@ -83,6 +85,5 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/profileFB.js"></script>
-  <script src="/add.js"></script>
 </body>
 </html>

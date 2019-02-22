@@ -76,7 +76,7 @@ function choicesfunction() {
 		$('.choices').hide(500);
 		$('#story').hide(500);
 		$('#storyImg').hide(500);
-		$('h2').text("your score is" + score + "/5");
+		$('h2').text("your score is " + score + "/5");
 	}
 }
 
