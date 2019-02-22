@@ -23,6 +23,7 @@ function changeUser(response){
   $(".facebookLogin p").hide();
   $("#name").text(response.name);
   $("#photo").attr("src", response.picture.data.url);
+  window.location.href='/home';
   var pictureLink = response.picture.data.url;
   localStorage.setItem('fbPicture', pictureLink);
   var username = response.name;
