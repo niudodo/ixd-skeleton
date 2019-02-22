@@ -76,7 +76,9 @@ function choicesfunction() {
 		$('.choices').hide(500);
 		$('#story').hide(500);
 		$('#storyImg').hide(500);
-		$('h2').text("your score is" + score + "/5");
+		$('h2').text("your score is " + score + "/5");
+		$('h4').text("A low score correlates with a lower mood. A '5' would be very happy and a '1' would be very sad");
+
 	}
 }
 
