@@ -71,12 +71,12 @@
 }
 
 /* Add a background color on mouse-over */
-.navbar a:hover {
+.bottomNavbar a:hover {
   background-color: #000;
 }
 
 /* Style the current/active link */
-.navbar a.active {
+.bottomNavbar a.active {
   background-color: #4CAF50;
 }
 
