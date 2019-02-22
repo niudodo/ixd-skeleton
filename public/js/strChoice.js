@@ -46,6 +46,7 @@ var data =  [
 			}];
 
 var num = 0;  
+var score = 0;
 
 $(document).ready(function(){
 	initializePage();
@@ -75,12 +76,20 @@ function choicesfunction() {
 		$('.choices').hide(500);
 		$('#story').hide(500);
 		$('#storyImg').hide(500);
-		$('h2').text("your score is 8/10");
+		$('h2').text("your score is" + score + "/5");
 	}
 }
 
 function buttonClick(e){
 	e.preventDefault();
+	console.log(this);
+	if(this.id == "1"){
+		score++;
+	}
+	if($(this).id == "2"){
+		score++;
+	}
+	console.log(score);
 	var delayInMilliSec = 1000;
 	$(".choices").hide(500);
 	setTimeout(choicesfunction, delayInMilliSec);
