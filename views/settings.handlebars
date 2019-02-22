@@ -1,0 +1,76 @@
+<!doctype html>
+<meta name ="viewport" content="width=device-width,initial-scale= 1.0">
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<!-- for icon library-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link href="/css/introHCI.css" rel="stylesheet">
+	{{>facebook}}
+	<script src="/js/facebook.js"></script>
+</head>
+
+<body>
+	<!-- This is the top panel of website with bottom -->
+	<div class="navbar topNavbar" >
+		<div class="text-center">
+			<a href="javascript:history.back()" id="prev"><i class="material-icons prev-icon">
+				navigate_before
+			</i></a>
+			<h4>Home</h4>
+		</div><!--end of panel body-->
+	</div><!--end of panel-->
+	
+	<div class="container">
+		
+		<hr>
+
+		<!-- Quick statistics section -->
+		<center> 
+			<h3>Settings</h3>
+		</center>
+
+		<form id="addFriendForm" role="form" method="get" action="/add">
+			
+		    <div class="form-group">
+		      <label for="name">Add Personal Goal:</label>
+		      <input type="text" class="form-control" id="name" placeholder="Ex: Create more friends" name="name">
+		    </div>
+		    <input type="submit" id="submitBtn" class="btn btn-default" value="Add"></input>
+		    <div class="form-group">
+		      <label for="description">Add Something You Want to Work on:</label>
+		      <input type="text" class="form-control" id="description" placeholder="Ex: Being Nicer " name="description">
+		    </div>
+		    <input type="submit" id="submitBtn" class="btn btn-default" value="Add"></input>
+		</form>
+
+		<hr>
+	</div>
+	<!--this is the buttom nav bar -->
+	<div class="navbar bottomNavbar" >	
+		<a href="/profile"><i class="material-icons" >
+			person
+		</i> Profile
+		</a>
+		<a href="/statistics"><i class="material-icons" >
+			assessment
+		</i>Statistic</a>
+		<a href="/advices"><i class="material-icons">
+			toys
+		</i>Advices</a>
+		<a href="/settings"><i class="material-icons">
+			settings
+		</i>Setting</a>
+	</div><!--end of buttom nav bar -->
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="/js/graph.js"></script>
+</body>
+</html>
