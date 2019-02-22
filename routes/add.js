@@ -8,6 +8,5 @@ exports.addGoals = function(request, response) { 
 		"goalContext":request.query.goalContext,
 	});
 	response.render('settings',goals);
-	localStorage.setItem('goalsStorage', goals);
 	console.log(goals);
  }
