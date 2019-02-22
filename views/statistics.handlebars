@@ -14,52 +14,25 @@
 </head>
 
 <body>
+<!-- This is the top panel of website with bottom -->
   <!-- This is the top panel of website with bottom -->
-  <!-- This is the top panel of website with bottom -->
-  <div class="panel panel-default">
-    <div class="panel-heading text-center panel-relative">
-      <a href="/"><i class="material-icons prev-icon" 
-        style="color:black;">
+  <div class="navbar topNavbar" >
+    <div class="text-center">
+      <a href="javascript:history.back()" id="prev"><i class="material-icons prev-icon">
         navigate_before
       </i></a>
-      <a href="/"><i class="material-icons home-icon" 
-        style="color:black">
+      <a href="/home"><i class="material-icons home-icon">
         home
       </i></a>
 
       <h4>Statistics</h4>
 
-      <div class="dropdown">
-        <button id="menu" class="topright" style="border: 0px">
-        <i class="material-icons" style="color:black;">
-          menu
-        </i></button>
-        <div class="dropdown-content">
-          <button>
-          <a href="/profile"><i class="material-icons" style="color:black">
-            person
-          </i> Profile
-          </a></button>
-          
-          <button><a href="/statistics"><i class="material-icons" style="color: black">
-            assessment
-          </i>Statistic</a></button>
-          <button><a href="/advices"><i class="material-icons"
-            style="color: black">
-            toys
-          </i>Advices</a></button>
-          <button><a href="#"><i class="material-icons"
-            style="color: black">
-            settings
-          </i>Setting</a></button>
-        </div><!--end of dropdown context-->
-      </div><!--end of dropdown-->
     </div><!--end of panel body-->
   </div><!--end of panel-->
   
   <!--start of Weekly Statistics-->
   <div class="container">
-    <div class="jumbotron" style="border: 2px; border-style: solid; border-color: #E6E6E6">
+    <div style="border: 2px; border-style: solid; border-color: #E6E6E6">
       <center>
         <h2 style="color: #F4BC42;">This Week</h2>
       </center>
@@ -93,6 +66,21 @@
       </table>
     </div>
   </div>
+  <div class="navbar bottomNavbar" >  
+    <a href="/profile"><i class="material-icons" >
+      person
+    </i> Profile
+    </a>
+    <a href="/statistics"><i class="material-icons" >
+      assessment
+    </i>Statistic</a>
+    <a href="/advices"><i class="material-icons">
+      toys
+    </i>Advices</a>
+    <a href="#"><i class="material-icons">
+      settings
+    </i>Setting</a>
+  </div><!--end of buttom nav bar -->
 
 
   <script src="https://code.jquery.com/jquery.js"></script>
