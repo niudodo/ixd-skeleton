@@ -1,13 +1,13 @@
-var data = require("../goals.json");
+var goals = require("../goals.json");
 
 exports.addGoals = function(request, response) {    
 	// Your code goes here
-	console.log(data)
+	console.log(goals)
 	console.log(response.query);
-	data.goals.push({
+	goals.goals.push({
 		"goalContext":request.query.goalContext,
 	});
-	response.render('settings',data);
-	response.render('profile', data);
-	console.log(data)
+	response.render('settings',goals);
+	localStorage.setItem('goalsStorage', goals);
+	console.log(goals);
  }

@@ -8,6 +8,7 @@ function initializePage(){
 	$("#facebookPhoto").attr('src', pictureLink);
 	var username = localStorage.getItem('fbUsername');
 	$("#profileName").text(username);
+	
 	console.log(pictureLink);
 }
 
