@@ -36,20 +36,21 @@
     <div  style="border: 2px; border-style: solid; border-color: #E6E6E6">
       <h2 style="color: #F4BC42">Last Advice:</h2>
 
-      <h4>
+      <h4 id="logTitle">
         You logged: FRIEND TROUBLE
       </h4>
 
-        <p>
+        <p id="lastAdvice">
           "Why wait for them to approach you? Start a conversation. It will only give you answers."
         </p>
       <!--Last advice: complete button-->
-      <input type=button id="completeLastAdvice" onclick="window.location.href='/home';" class="left-block" value="I Did It!" style="border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6">
-      </input>
+      <button id="completeLastAdvice" style="float: left; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6"> I did it!
+      </button>
       <!--Last advice: incomplete button-->
-      <input type=button id="NoToLastAdvice" onclick="window.location.href='/home';" class="right-block" value="I Didn't" style="float: right; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6">
-      </input>
+      <button id="NoToLastAdvice" style="float: right; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6"> DELETE 
+      </button>
     </div>
+    <hr>
 
     <!--Past Advice Section-->
     <h4 style="float: right;">sort by: DATE</h4>
@@ -79,5 +80,6 @@
   </div><!--end of buttom nav bar -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/adviceDelete.js"></script>
 </body>
 </html>
