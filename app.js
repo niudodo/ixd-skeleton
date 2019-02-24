@@ -18,6 +18,8 @@ var profile = require('./routes/profile');
 var statistics = require('./routes/statistics');
 var settings = require('./routes/settings');
 var add = require('./routes/add');
+var friend = require('./routes/storyline/friend');
+var family = require('./routes/storyline/family');
 
 
 var app = express();
@@ -53,6 +55,8 @@ app.get('/statistics', statistics.viewStatistics);
 app.get('/settings', settings.viewSettings);
 app.get('/add',add.addGoals);
 app.get('/add',add.addWorking);
+app.get('/storyline/friend',friend.viewFriend);
+app.get('/storyline/family',family.viewFamily);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

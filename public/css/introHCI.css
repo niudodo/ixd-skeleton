@@ -35,6 +35,16 @@
      align-self: center;
 }
 
+/*button in the storyline page*/
+.storyTypeButton {
+  align-self: center;
+  width: 260px;
+  height:60px;
+  font-size: 25px;
+  border-radius: 4px;
+  background-color:#f4bc42;
+}
+
 /* navbar css*/
 .navbar {
   background-color: #333;
@@ -81,7 +91,6 @@
 }
 
 /*end of navbar css*/
-
 #prev{
   float: left;
   display: block;
@@ -100,43 +109,10 @@ i {
 }
 
 
-.dropdown {
-     position: absolute;
-     right:0;
-     top:13px;
-     align-content: right;
-}
-.dropdown-content{
-     display: none;
-     position: absolute;
-     top:40px;
-     min-width: 160px;
-     right:0;
-     z-index:1;
-     background-color:#f4bc42;
-}
-
-.dropdown-context a{
-     color:black;
-     padding:12px 16px;
-     display: inline-block;
-}
-
-.dropdown-content button{
-    width: 150px;
-    height:45px;
-    text-align: left;
-    background-color: #f4bc42
-}
-
 .topright {
   position: absolute;
   top: 0px;
   right: 40px;
-}
-
-.panel-relative {
-  position: relative;
 }
 
 #strtStryln{
