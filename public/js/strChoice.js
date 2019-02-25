@@ -54,6 +54,8 @@ $(document).ready(function(){
 
 function initializePage(){
 	console.log("javascript connected ");
+	num = 0;
+	score = 0;
 	choicesfunction();
 	$(".choices").click(buttonClick);
 }
