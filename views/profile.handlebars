@@ -60,12 +60,16 @@
         <p style="float: right; ">{{goalContext}}</p>  
         <br>
       {{/each}}
+      <input class="Personalgoalbtn" type=button onclick="window.location.href='/settings';" value="+" style="width: 40px; height: 25px; border-radius: 4px; bumper: 10px; float: left; ">
+      <br/>
       <hr>
       <h4>Needs Work</h4>
       {{#each working}}
         <p style="float: right; ">{{workingContext}}</p>  
         <br>
       {{/each}}
+      <input class= "Needsworkbtn" type=button onclick="window.location.href='/settings';" value="+" style="width: 40px; height: 25px; border-radius: 4px; bumper: 10px; float: left; ">
+      <br/>
     </div>
     <div class="navbar bottomNavbar" >  
     <a href="/profile"><i class="material-icons" >
@@ -77,7 +81,7 @@
     </i>Statistic</a>
     <a href="/advices"><i class="material-icons">
       toys
-    </i>Advices</a>
+    </i>Advice</a>
     <a href="/settings"><i class="material-icons">
       settings
     </i>Setting</a>
