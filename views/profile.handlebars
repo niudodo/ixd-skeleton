@@ -60,17 +60,28 @@
         <p style="float: right; ">{{goalContext}}</p>  
         <br>
       {{/each}}
-      <input class="Personalgoalbtn" type=button onclick="window.location.href='/settings';" value="+" style="width: 40px; height: 25px; border-radius: 4px; bumper: 10px; float: left; ">
+
+
+      <!--collapsible Add new Personal Goal button-->
+      <!--<button class="collapsible" style="width: 40px; height: 25px; border-radius: 4px; bumper: 10px; float: left; cursor: pointer;">+</button>
+
+        <div class="content" style="padding: 0 18px; display: none; overflow: hidden;">-->
+
+      <!--Add new Personal Goal button-->
+          <form id="addFriendForm" role="form" method="get" action="/add" style="padding: 15px 0">
+      
+          <div class="form-group">
+          <label for="goalContext">Add Goal:</label>
+          <input type="text" class="form-control" id="name" placeholder="Ex: Create more friends" name="goalContext">
+        </div>
+        
+        <input type="submit" id="submitBtn" class="btn btn-default" value="Add"></input>
+          </form>
+        </div>
+
       <br/>
       <hr>
-      <h4>Needs Work</h4>
-      {{#each working}}
-        <p style="float: right; ">{{workingContext}}</p>  
-        <br>
-      {{/each}}
-      <input class= "Needsworkbtn" type=button onclick="window.location.href='/settings';" value="+" style="width: 40px; height: 25px; border-radius: 4px; bumper: 10px; float: left; ">
-      <br/>
-    </div>
+  </div>
     <div class="navbar bottomNavbar" >  
     <a href="/profile"><i class="material-icons" >
       person
