@@ -49,16 +49,13 @@ var num = 0;
 var score = 0;
 
 $(document).ready(function(){
-	initializePage();
-})
-
-function initializePage(){
 	console.log("javascript connected ");
 	num = 0;
 	score = 0;
 	choicesfunction();
 	$(".choices").click(buttonClick);
-}
+	$('#chart').hide();
+});
 
 function choicesfunction() {
 	console.log("choices Function called ");
@@ -80,6 +77,7 @@ function choicesfunction() {
 		$('#storyImg').hide(500);
 		$('h2').text("your score is " + score + "/5");
 		$('h4').text("A low score correlates with a lower mood. A '5' would be very happy and a '1' would be very sad");
+		$('#chart').show();
 	}
 }
 
@@ -93,8 +91,8 @@ function buttonClick(e){
 		score++;
 	}
 	console.log(score);
-	var delayInMilliSec = 1000;
-	$(".choices").hide(500);
+	var delayInMilliSec = 500;
+	$(".choices").hide(300);
 	setTimeout(choicesfunction, delayInMilliSec);
-	$(".choices").show(500);
+	$(".choices").show(300);
 }

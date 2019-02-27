@@ -1,8 +1,6 @@
 
 
-$(document).ready(function(){
-	initializePage();
-})
+$(document).ready(initializePage);
 
 function initializePage(){
 	console.log("graph javascript connected ");
