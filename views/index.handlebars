@@ -47,8 +47,9 @@
 				{{#each advices}}
 					<tr>
 						<div class="advices" id={{name}}>
-							<th>{{description}}</th>
-							<th>{{status}}</th>
+							<td>{{date}}</td>>
+							<td>{{description}}</td>
+							<th onclick="window.location.href=/advices">{{status}}</th>
 						</div>
 					</tr>
 				{{/each}}
@@ -66,7 +67,7 @@
 		</i>Statistic</a>
 		<a href="/advices"><i class="material-icons">
 			toys
-		</i>Advices</a>
+		</i>Advice</a>
 		<a href="/settings"><i class="material-icons">
 			settings
 		</i>Setting</a>
