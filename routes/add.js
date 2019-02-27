@@ -5,7 +5,7 @@ exports.addGoals = function(request, response) { 
 	goals.goals.push({
 		"goalContext":request.query.goalContext
 	});
-	response.render('settings',goals);
+	response.render('profile',goals);
 	console.log(goals);
  }
 
@@ -14,6 +14,6 @@ exports.addWorking = function(request,response) {
 	goals.working.push({
 		"workingContext":request.query.workingContext
 	});
-	response.render('settings', goals);
+	response.render('profile', goals);
 	console.log(goals);
 }
