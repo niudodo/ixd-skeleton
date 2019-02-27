@@ -12,9 +12,13 @@ function drawChart() {
   var data = google.visualization.arrayToDataTable([
     ['','Passion','Happy',
     'Joy', 'Depress', 'Angry','Mediocre', {role: 'style'}],
-    ['Family', 10, 24, 20, 32, 18, 5, ''],
-    ['Friend', 16, 22, 23, 30, 16, 9, ''],
-    ['School', 28, 19, 29, 30, 12, 13, '']
+    ['S', 10, 24, 20, 32, 18, 5, ''],
+    ['M', 10, 24, 20, 32, 18, 5, ''],
+    ['Tu', 16, 22, 23, 30, 16, 9, ''],
+    ['W', 28, 19, 29, 30, 12, 13, ''],
+    ['Th', 16, 22, 23, 30, 16, 9, ''],
+    ['F', 16, 22, 23, 30, 16, 9, ''],
+    ['S', 10, 24, 20, 32, 18, 5, '']
   ]);
 
   var options = {
@@ -24,11 +28,11 @@ function drawChart() {
     bar: { groupWidth: '75%' },
     isStacked: true,
     series: {
-      0:{color:'#FFBA4C'},
+      0:{color:'#FCAC2C'},
       1:{color:'#FFC466'},
       2:{color:'#FFD799'},
-      3:{color:'#0085B2'},
-      4:{color:'#0098CC'},
+      3:{color:'#006384'},
+      4:{color:'#0085B2'},
       5:{color:'#00ABE5'}
     }
   };

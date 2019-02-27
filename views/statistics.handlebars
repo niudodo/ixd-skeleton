@@ -37,12 +37,13 @@
         <h2 style="color: #F4BC42;">This Week</h2>
       </center>
 
+    <p style="text-align: center;">Here's what you've felt each day of this week:</p>
+    <hr>
     <!-- Add This week's statistics chart here-->
-      <h3>Out of the 10 times you logged, you had:</h3>
-        <p>4 moments of jealousy</p>
-        <p>3 moments of rage</p>
-        <p>5 moments of loneliness</p>
-      <img src="/images/graph.png" class="img-responsive"> </img>
+      <!-- GOOGLE GRAPH API -->
+    <div id="chart"></div>
+    <!--<img src="/images/graph.png" class="img-responsive"> </img>-->
+    <hr>
 
       <h3>You completed:</h3>
         <p>2 pieces of advice</p>
@@ -85,5 +86,7 @@
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="/js/graph.js"></script>
 </body>
 </html>
