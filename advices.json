@@ -7,14 +7,14 @@
 		},
 		{
 			"type":"FRIEND TEMPER",
-			"description":"think for 1 min before yell at your friend",
+			"description":"Think for 1 min before yelling at your friend.",
 			"status":"complete",
 			"date":"2/11/19"
 		},
 
 		{
 			"type":"FAMILY ISSUE",
-			"description":"Don't keep it all inside. Your parents will be happy to hear your perspective and you'll feel better after, too!",
+			"description":"Don't keep it all inside. Your parents will be happy to hear your perspective and you'll feel better, too!",
 			"status":"incomplete",
 			"date":"2/10/19"
 		},
