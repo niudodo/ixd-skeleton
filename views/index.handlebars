@@ -19,7 +19,7 @@
 	<!-- This is the top panel of website with bottom -->
 	<div class="navbar topNavbar" >
 		<div class="text-center">
-			<a href="javascript:history.back()" id="prev"><i class="material-icons prev-icon">
+			<a href="javascript:history.back()" id="prev"><i class="material-icons prev-icon" style="color: #6E6E6E"s>
 				navigate_before
 			</i></a>
 			<h4>Home</h4>
@@ -27,14 +27,14 @@
 	</div><!--end of panel-->
 	
 	<div class="container">
-		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline">
+		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
 		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
 		</input>
 
 		<hr>
 
 		<!-- Quick statistics section -->
-		<h3>How you've felt this week:</h3>
+		<h3 style="text-align: center; margin-bottom: 20px;">Here's your weekly report</h3>
 		<!-- GOOGLE GRAPH API -->
 		<div id="chart"></div>
 		<!--<img src="/images/graph.png" class="img-responsive"> </img>-->
@@ -43,32 +43,34 @@
 		<!-- Last advice section -->
 		<div style="padding: 5px; border: 2px; border-style: solid; border-color: #E6E6E6; margin-bottom: 10px;">
 			<button><a href="/advices">Last Advice</a></button>
-			<table>
-				{{#each advices}}
-					<tr>
-							<td>{{date}}</td>>
-							<td>{{description}}</td>
-							<th >{{status}}</th>
-					</tr>
-				{{/each}}
-			</table>
+			<div>
+				<table>
+					{{#each advices}}
+						<tr>
+								<td>{{date}}</td>>
+								<td>{{description}}</td>
+								<th >{{status}}</th>
+						</tr>
+					{{/each}}
+				</table>
+			</div>
 		</div>
 	</div>
 	<!--this is the buttom nav bar -->
 	<div class="navbar bottomNavbar" >	
-		<a href="/profile"><i class="material-icons" >
-			person
-		</i> Profile
-		</a>
-		<a href="/statistics"><i class="material-icons" >
-			assessment
-		</i>Statistic</a>
-		<a href="/advices"><i class="material-icons">
-			toys
-		</i>Advice</a>
-		<a href="/settings"><i class="material-icons">
-			settings
-		</i>Setting</a>
+		<a href="/home"><i class="material-icons home-icon" style="color: #6A9CE4">
+      home
+    </i><br>Home</a>
+    <a href="/statistics"><i class="material-icons" style="color: #6E6E6E">
+      assessment
+    </i><br>Statistics</a>
+    <a href="/advices"><i class="material-icons" style="color: #6E6E6E;">
+      toys
+    </i><br>Advice</a>
+    <a href="/profile"><i class="material-icons" style="color: #6E6E6E">
+      person
+    </i><br>Profile
+    </a>
 	</div><!--end of buttom nav bar -->
 
 	<script src="https://code.jquery.com/jquery.js"></script>

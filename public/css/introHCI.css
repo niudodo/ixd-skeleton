@@ -47,7 +47,7 @@
 
 /* navbar css*/
 .navbar {
-  background-color: #333;
+  background-color:#EDEDED;
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -65,24 +65,26 @@
 .navbar a {
   float: left;
   padding: 12px;
-  color: white;
+  color: #595959;;
   text-decoration: none;
   font-size: 12px;
   width: 25%; 
   text-align: center; 
 }
-.home-icon {
+/*.home-icon {
+  color: #595959;
   position: absolute;
-  left:40px;
+  left:40px;*/
 }
 .prev-icon{
+  color: #6E6E6E;
   position: absolute;
   left:1%;
 }
 
 /* Add a background color on mouse-over */
 .bottomNavbar a:hover {
-  background-color: #000;
+  background-color: #C7CBD1;
 }
 
 /* Style the current/active link */
