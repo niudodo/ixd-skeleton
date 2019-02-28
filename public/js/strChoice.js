@@ -52,6 +52,7 @@ $(document).ready(function(){
 	choicesfunction();
 	$(".choices").click(buttonClick);
 	$('#strchart').hide();
+	$('#seeadvice').hide();
 });
 
 function choicesfunction() {
@@ -75,6 +76,7 @@ function choicesfunction() {
 		$('h2').text("your score is " + score + "/5");
 		$('h4').text("A low score correlates with a lower mood. A '5' would be very happy and a '1' would be very sad");
 		$('#strchart').show();
+		$('#seeadvice').show();
 	}
 }
 
