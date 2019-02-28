@@ -49,9 +49,9 @@
 .navbar {
   background-color:#EDEDED;
   overflow: hidden;
-  position: sticky;
-  z-index: 1000;
+  position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 .bottomNavbar {
@@ -62,6 +62,7 @@
   top:0;
   margin-top: 0;
 }
+
 /* Navigation links */
 .navbar a {
   float: left;
