@@ -1,7 +1,7 @@
 { "advices" : [
 		{
 			"type":"FRIEND TEMPER",
-			"description":"try to be nice to your friend",
+			"description":"Why wait for them to approach you? Start a conversation. It will only give you answers.",
 			"status":"incomplete",
 			"date":"2/13/19"
 		},
@@ -9,20 +9,20 @@
 			"type":"FRIEND TEMPER",
 			"description":"think for 1 min before yell at your friend",
 			"status":"complete",
-			"date":"2/13/19"
+			"date":"2/11/19"
 		},
 
 		{
 			"type":"FAMILY ISSUE",
 			"description":"Don't keep it all inside. Your parents will be happy to hear your perspective and you'll feel better after, too!",
 			"status":"incomplete",
-			"date":"2/13/19"
+			"date":"2/10/19"
 		},
 		{
 			"type":"SELF GROW",
 			"description":"Sometimes you have to own up to your mistakes. You can only grow from it!",
 			"status":"complete",
-			"date":"2/13/19"
+			"date":"2/9/19"
 		}
 ]
 }

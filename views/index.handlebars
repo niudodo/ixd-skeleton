@@ -41,14 +41,14 @@
 
 		<!-- Last advice section -->
 		<div style="padding: 5px; border: 2px; border-style: solid; border-color: #E6E6E6; margin-bottom: 10px;">
-			<button><a href="/advices">Last Advice</a></button>
+			<button id="adviceHome" onclick="window.location.href='/advices';">Last Advice</button>
 			<div>
 				<table>
 					{{#each advices}}
 						<tr>
-								<td>{{date}}</td>>
-								<td>{{description}}</td>
-								<th >{{status}}</th>
+								<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{date}}</td>>
+								<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{description}}</td>
+								<th style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{status}}</th>
 						</tr>
 					{{/each}}
 				</table>

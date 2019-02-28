@@ -155,6 +155,15 @@ i {
     text-align: center;
 }
 
+#adviceHome {
+  top:10%;
+  align-self: left;
+  width: 150px;
+  height:40px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #EDEDED;
+}
 
 
 /* show the dropdown menu on hover */

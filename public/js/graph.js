@@ -11,7 +11,7 @@ function initializePage(){
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
     ['','Passion','Happy',
-    'Joy', 'Depress', 'Angry','Mediocre', {role: 'style'}],
+    'Joy', 'Sad', 'Angry','Mediocre', {role: 'style'}],
     ['S', 1, 2, 2, 1, 3, 0, ''],
     ['M', 2, 0, 0, 5, 2, 0, ''],
     ['Tu', 1, 2, 3, 1, 1, 1, ''],
