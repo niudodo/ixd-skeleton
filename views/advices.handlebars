@@ -30,7 +30,7 @@
   
   <!--start of Last Advice-->
   <div class="container">
-    <div  style="border: 2px; border-style: solid; border-color: #E6E6E6">
+    <div  style="border: 2px; border-style: solid; border-color: #E6E6E6; margin-top: 20px;">
       <h2 style="color: #F4BC42">Last Advice:</h2>
 
       <h4 id="logTitle">
@@ -41,11 +41,48 @@
           "Why wait for them to approach you? Start a conversation. It will only give you answers."
         </p>
       <!--Last advice: complete button-->
-      <button id="completeLastAdvice" style="float: left; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6"> I did it!
+      <button class="collapsible" id="completeLastAdvice" style="float: left; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6"> I did it!
       </button>
+        <div class="content">
+          <br><br>
+          <p>This advice:</p>
+          <form action="/action_page.php" method="get" style="margin-left: 20px;">
+            <input type="checkbox" name="" value="Good">Solved my problem<br>
+            <input type="checkbox" name="vehicle" value="Decent">Only helped slightly<br>
+            <input type="checkbox" name="" value="Bad">Made the problem worse<br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+
       <!--Last advice: incomplete button-->
-      <button id="NoToLastAdvice" style="float: right; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6"> DELETE 
+      <button class="collapsible" id="NoToLastAdvice" style="float: right; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6"> DELETE 
       </button>
+        <div class="content">
+          <br><br>
+          <p>Why didn't you do it?</p>
+          <form action="/action_page.php" method="get" style="margin-left: 20px;">
+            <input type="checkbox" name="" value="Irrelevant">It doesn't apply<br>
+            <input type="checkbox" name="vehicle" value="Dislike">Don't like it<br>
+            <input type="checkbox" name="" value="Tried before">Have already tried it<br>
+            <input type="checkbox" name="" value="N/a">Don't want to do it<br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      <!-- Collapsible example
+      <button class="collapsible">I did it!</button>
+        <div class="content">
+          <form id="addFriendForm" role="form" method="get" action="/add" style="padding: 15px 0">
+      
+          <div class="form-group">
+          <label for="goalContext">Add Goal:</label>
+          <input type="text" class="form-control" id="name" placeholder="Ex: Create more friends" name="goalContext">
+        </div>
+        
+        <input type="submit" id="submitBtn" class="btn btn-default" value="Add"></input>
+          </form>
+        </div>
+      -->
+
     </div>
     <hr>
 
@@ -78,5 +115,23 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/adviceDelete.js"></script>
+
+  <!-- makes collapsible work-->
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+       coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+             content.style.display = "none";
+          } else {
+            content.style.display = "block";
+            }
+         });
+        }
+  </script>
 </body>
 </html>
