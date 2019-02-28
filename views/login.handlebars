@@ -34,15 +34,18 @@
 			<br>
 			<!-- <input type="submit" onclick="window.location.href='/';" class="center-block" value="Login" style="width: 100px; padding:10px 16px; margin: 0 auto; box-sizing: border-box; border-radius: 4px; align-content: center;"> -->
 		</form>
-		<p class="facebookLogin">
-			Please login through Facebook
-			<fb:login-button data-size="large" scope="public_profile,email" onlogin="checkLoginState();">
-			</fb:login-button>
-		</p>
 
 		<input type=button id="completeLogin" onclick="window.location.href='/home';" class="center-block" value="Login" style="border-radius: 4px; width: 100px; padding:10px 16px; background-color: #F4BC42">
 		</input>
 
+		<br>
+		<hr>
+		<br>
+		<!-- FB login -->
+		<p class="facebookLogin" style="text-align: center;">
+			<fb:login-button data-size="large" scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
+		</p>
 	</div>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
