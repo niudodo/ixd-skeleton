@@ -49,7 +49,8 @@
 .navbar {
   background-color:#EDEDED;
   overflow: hidden;
-  position: fixed;
+  position: sticky;
+  z-index: 1000;
   width: 100%;
 }
 
@@ -165,6 +166,11 @@ i {
   background-color: #EDEDED;
 }
 
+/* google api chart*/
+#chart {
+	z-index: 1;
+	position: relative;
+}
 
 /* show the dropdown menu on hover */
 .dropdown:hover .dropdown-content{display: block;}

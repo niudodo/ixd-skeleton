@@ -17,13 +17,7 @@
 
 <body>
 	<!-- This is the top panel of website with bottom -->
-	<div class="navbar topNavbar" >
-		<div class="text-center">
-			<a href="javascript:history.back()" id="prev"><i class="material-icons prev-icon" style="color: #6E6E6E"s>
-				navigate_before
-			</i></a>
-		</div><!--end of panel body-->
-	</div><!--end of panel-->
+	{{>header}}
 	
 	<div class="container">
 		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
@@ -55,26 +49,13 @@
 			</div>
 		</div>
 	</div>
-	<!--this is the buttom nav bar -->
-	<div class="navbar bottomNavbar" >	
-		<a href="/home"><i class="material-icons home-icon" style="color: #6A9CE4">
-      home
-    </i><br>Home</a>
-    <a href="/statistics"><i class="material-icons" style="color: #6E6E6E">
-      assessment
-    </i><br>Statistics</a>
-    <a href="/advices"><i class="material-icons" style="color: #6E6E6E;">
-      toys
-    </i><br>Advice</a>
-    <a href="/profile"><i class="material-icons" style="color: #6E6E6E">
-      person
-    </i><br>Profile
-    </a>
-	</div><!--end of buttom nav bar -->
+	<!-- this is the bottom navbar-->
+	{{>navbar}}
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="/js/graph.js"></script>
+	<script src="/js/navbarColor.js"></script>
 </body>
 </html>

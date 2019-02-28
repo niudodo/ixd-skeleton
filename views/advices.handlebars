@@ -15,15 +15,7 @@
 
 <body>
   <!-- This is the top panel of website with bottom -->
-  <!-- This is the top panel of website with bottom -->
-  <!-- This is the top panel of website with bottom -->
-  <div class="navbar topNavbar" >
-    <div class="text-center">
-      <a href="javascript:history.back()" id="prev"><i class="material-icons prev-icon" style="color: #6E6E6E">
-        navigate_before
-      </i></a>
-    </div><!--end of panel body-->
-  </div><!--end of panel-->
+  {{>header}}
   
   <!--start of Last Advice-->
   <div class="container">
@@ -93,25 +85,13 @@
         <p>{{description}}</p>
     {{/each}}
   </div>
-  <!--this is the buttom nav bar -->
-  <div class="navbar bottomNavbar">  
-    <a href="/home"><i class="material-icons home-icon" style="color: #6E6E6E">
-      home
-    </i><br>Home</a>
-    <a href="/statistics"><i class="material-icons" style="color: #6E6E6E">
-      assessment
-    </i><br>Statistics</a>
-    <a href="/advices"><i class="material-icons" style="color: #6A9CE4;">
-      toys
-    </i><br>Advice</a>
-    <a href="/profile"><i class="material-icons" style="color: #6E6E6E">
-      person
-    </i><br>Profile
-    </a>
-  </div><!--end of buttom nav bar -->
+  <!-- this is the bottom navbar-->
+  {{>navbar}}
+  
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/adviceDelete.js"></script>
+  <script src="/js/navbarColor.js"></script>
 
   <!-- makes collapsible work-->
   <script>
