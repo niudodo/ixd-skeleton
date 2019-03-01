@@ -39,11 +39,13 @@
 			<div>
 				<table>
 					{{#each advices}}
+						{{#unless status}}
 						<tr>
-								<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{date}}</td>>
-								<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{description}}</td>
-								<th style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{status}}</th>
+						<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{date}}</td>>
+						<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{description}}</td>
+						<th style="padding: 5px 8px; border-bottom: 1px solid #ddd;">Incomplete</th>
 						</tr>
+						{{/unless}}
 					{{/each}}
 				</table>
 			</div>
