@@ -65,19 +65,21 @@ function drawWeekChart() {
 function drawDetailChart(){
  console.log("drawDetailChart called");
  var oldData = google.visualization.arrayToDataTable([
-      ['Name', 'Popularity'],
-      ['Cesar', 250],
-      ['Rachel', 4200],
-      ['Patrick', 2900],
-      ['Eric', 8200]
+      ['Emotion', 'Times of log'],
+      ['Happy', 5],
+      ['Joy', 6],
+      ['Mediocre', 3],
+      ['Sad', 6],
+      ['Depress', 3]
     ]);
 
     var newData = google.visualization.arrayToDataTable([
-      ['Name', 'Popularity'],
-      ['Cesar', 370],
-      ['Rachel', 600],
-      ['Patrick', 700],
-      ['Eric', 1500]
+      ['Emotion', 'Times of log'],
+      ['Happy', 7],
+      ['Joy', 7],
+      ['Mediocre', 2],
+      ['Sad', 2],
+      ['Depress', 2]
     ]);
 
     /*var colChartBefore = new google.visualization.ColumnChart(document.getElementById('colchart_before'));
@@ -85,8 +87,8 @@ function drawDetailChart(){
     var colChartDiff = new google.visualization.ColumnChart(document.getElementById('colchart_diff'));*/
     var barChartDiff = new google.visualization.BarChart(document.getElementById('barchart_diff'));
 
-    var options = { diff: { newData: { widthFactor: 0.8 } } };
-    var diffData = colChartDiff.computeDiff(oldData, newData);
+    var options = { diff: { newData: { widthFactor: 0.8, opacity:0.1}}};
+    var diffData = barChartDiff.computeDiff(oldData, newData);
     //colChartDiff.draw(diffData, options);
     barChartDiff.draw(diffData, options);
 }
