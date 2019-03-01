@@ -74,7 +74,13 @@ function choicesfunction() {
 		$('#story').hide(500);
 		$('#storyImg').hide(500);
 		$('h2').text("your score is " + score + "/5");
-		$('h4').text("A low score correlates with a lower mood. A '5' would be very happy and a '1' would be very sad");
+		//$('h4').text("A low score correlates with a lower mood. A '5' would be very happy and a '1' would be very sad");
+		$('h4').text("A score of 0 correlates with Extremely Dissatisfied. A score of 1 correlates with Dissatisfied A score of 2 correlates with Neither Satisfied nor Dissatisfied. A score of 3 correlates with Somewhat Satisfied. A score of 4 correlates with Satisfied. A score of 5 correlates with Very Satisfied");
+		//$('h4').text("A score of 1 correlates with Dissatisfied");
+		//$('h4').text("A score of 2 correlates with Neither Satified nor Dissatisfied");
+		//$('h4').text("A score of 3 correlates with Somewhat Satisfied");
+		//$('h4').text("A score of 4 correlates with Satisfied");
+		//$('h4').text("A score of 5 correlates with Extremely Satisfied");
 		$('#strchart').show();
 		$('#seeadvice').show();
 	}
