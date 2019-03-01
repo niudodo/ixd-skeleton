@@ -32,21 +32,21 @@
       <!--Last advice: complete button-->
       <button class="collapsible" id="completeLastAdvice" style="float: left; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6; color: #6E6E6E; text-align: center;"> I DID IT!
       </button>
-        <div class="content">
+        <div id="contentCompleteAdvice" class="content">
           <br><br>
           <p>This advice:</p>
           <form action="/action_page.php" method="get" style="margin-left: 20px;">
             <input type="checkbox" name="" value="Good">Solved my problem<br>
             <input type="checkbox" name="vehicle" value="Decent">Only helped slightly<br>
             <input type="checkbox" name="" value="Bad">Made the problem worse<br>
-            <input type="submit" value="Submit">
+            <input id="submitBtnDidIt" type="submit" value="Submit">
           </form>
         </div>
 
       <!--Last advice: incomplete button-->
       <button class="collapsible" id="NoToLastAdvice" style="float: right; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6; color: #6E6E6E; text-align: center;"> DELETE 
       </button>
-        <div class="content">
+        <div id="contentNotCompleteAdvice" class="content">
           <br><br>
           <p>Why didn't you do it?</p>
           <form action="/action_page.php" method="get" style="margin-left: 20px;">
@@ -54,7 +54,7 @@
             <input type="checkbox" name="vehicle" value="Dislike">Don't like it<br>
             <input type="checkbox" name="" value="Tried before">Have already tried it<br>
             <input type="checkbox" name="" value="N/a">Don't want to do it<br>
-            <input type="submit" value="Submit">
+            <input id="submitBtnDelete" type="submit" value="Submit">
           </form>
         </div>
       <!-- Collapsible example
