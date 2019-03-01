@@ -54,6 +54,11 @@ $(document).ready(function(){
 	score = 0;
 	choicesfunction();
 	$(".choices").click(buttonClick);
+	$('#Joy').hide();
+	$('#Happy').hide();
+	$('#Mediocre').hide();
+	$('#Sad').hide();
+	$('#Angry').hide();
 	$('#strchart').hide();
 	$('#seeadvice').hide(); 
 });
@@ -77,9 +82,29 @@ function choicesfunction() {
 		$('#story').hide(500);
 		$('#storyImg').hide(500);
 		score = parseInt((score/ (num*4) )*5);
-		console.log("score out of five is" + score); 
-		$('h2').text("your score is " + score + "/5");
-		$('h4').text("A low score correlates with a lower mood. A '5' would be very happy and a '1' would be very sad");
+		console.log("score out of five is" + score);
+		if (score==5) {
+			$('#Joy').show();
+			$('h2').text("You're mainly feeling joyous! YAY!")
+		} 
+		else if (score==4) {
+			$('#Happy').show();
+			$('h2').text("You're mainly feeling happy! Keep it up!")
+		}
+		else if (score==3){
+			$('#Mediocre').show();
+			$('h2').text("Why so meh? Remember, problems are temporary!")
+		}
+		else if (score==2) {
+			$('#Sad').show();
+			$('h2').text("Feeling a bit down? Don't worry, we've got you!")
+		}
+		else if (score==1) {
+			$('#Angry').show();
+			$('h2').text("A bit frustrated? We've all been there! Take a deep breath.")
+		}
+		//$('h2').text("your score is " + score + "/5");
+		//$('h4').text("A low score correlates with a lower mood. A '5' would be very happy and a '1' would be very sad");
 		$('#strchart').show();
 		$('#seeadvice').show()
 	}
