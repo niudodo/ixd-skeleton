@@ -62,29 +62,34 @@ function drawWeekChart() {
 }
 
 function drawDetailChart(){
-  var data = google.visualization.arrayToDataTable([
-    ['','time(s) of feelings',"Goal" {role: 'style'}],
-    ['S', 4, 5, ''],
-    ['M', 2, 4, ''],
-    ['Tu', 1, 3, ''],
-    ['W', 3, 2, ''],
-    ['Th', 2, 1, ''],
-    ['F', 1, 4, ''],
-    ['S', 1, 2, '']]);
-    
-    var options = {
-    legend: { position: 'top', maxLines: 3 },
-    bar: { groupWidth: '75%' },
-    isStacked: true,
-    series: {
-        0:{color:'#FCAC2C'},
-        //1:{color:'#FFC466'},
-        //2:{color:'#FFD799'},
-        1:{color:'#ffffff',stroke-color:'#006384'},
-        //4:{color:'#0085B2'},
-        //5:{color:'#00ABE5'}
-    }
-  };
-  var chart = new google.visualization.ColumnChart(document.getElementById('chart')); 
-  chart.draw(data, options);
+ var oldData = google.visualization.arrayToDataTable([
+      ['Name', 'Popularity'],
+      ['Cesar', 250],
+      ['Rachel', 4200],
+      ['Patrick', 2900],
+      ['Eric', 8200]
+    ]);
+
+    var newData = google.visualization.arrayToDataTable([
+      ['Name', 'Popularity'],
+      ['Cesar', 370],
+      ['Rachel', 600],
+      ['Patrick', 700],
+      ['Eric', 1500]
+    ]);
+
+    var colChartBefore = new google.visualization.ColumnChart(document.getElementById('colchart_before'));
+    var colChartAfter = new google.visualization.ColumnChart(document.getElementById('colchart_after'));
+    var colChartDiff = new google.visualization.ColumnChart(document.getElementById('colchart_diff'));
+    var barChartDiff = new google.visualization.BarChart(document.getElementById('barchart_diff'));
+
+    var options = { diff: { newData: { widthFactor: 0.8 } } };
+
+    colChartBefore.draw(oldData, options);
+    colChartAfter.draw(newData, options);
+
+    var diffData = colChartDiff.computeDiff(oldData, newData);
+    colChartDiff.draw(diffData, options);
+    barChartDiff.draw(diffData, options);
 }
+
