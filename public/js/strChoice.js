@@ -1,49 +1,46 @@
 var data =  [
 			{	image: "/images/2019-02-07",
-				story: "When your friend randomly start crying", 
-				choice1: "cry with her",
-				choice2: "ask her if anything is wrong",
-				choice3: "being serious and ignore her",
-				choice4: "punch her"
-			}, 
+				story: "Your friend randomly starts crying", 
+				choice1: "Cry with her",
+				choice2: "Ask them if anything is wrong",
+				choice3: "Remain serious and ignore her",
+				choice4: "Tell her to stop crying and suck it up"}, 
 			{
 				image: "/images/2019-02-07",
-				story: "When your friend randomly start crying", 
-				choice1: "cry with him",
-				choice2: "ask him if anything is wrong",
-				choice3: "being serious and ignore him",
-				choice4: "punch him"
+				story: "Your friend is ignoring your texts", 
+				choice1: "Start crying",
+				choice2: "Ask them if anything is wrong",
+				choice3: "Let it go and wait",
+				choice4: "Call and yell at them"
 			},
 			{
 				image: "/images/2019-02-07",
-				story: "When you friend is being sassy and you don't know why", 
-				choice1: "being sassy back",
-				choice2: "ask her if anything is wrong",
-				choice3: "being serious and ignore her",
-				choice3: "walk away",
-				choice4: "punch her"
+				story: "Your friend is being sassy and you don't know why",
+				choice1: "Be sassy back",
+				choice2: "Ask her if anything is wrong",
+				choice3: "Don't react",
+				choice4: "Tell her she's a bad friend"
 			},{	
 				image: "/images/2019-02-07",
-				story: "When your friend is complaining to you about the same thing over and over", 
-				choice1: "can you be quite for even a sec??",
-				choice2: "listen quitely",
-				choice3: "help her with the issue and give advice",
-				choice4: "punch her"
+				story: "Your friend is complaining to you about the same thing over and over", 
+				choice1: "Say 'can you be quiet for even a sec??'",
+				choice2: "Listen quietly",
+				choice3: "Help her with the issue and give advice",
+				choice4: "Roll your eyes and say 'this again?'"
 			},{	
-				image: "/images/2019-02-07",
-				story: "When you firend want to go to a resturant you don't like much", 
+				image: "/images/2019-02-07", 
+				story: "Your friend wants to go to a restaurant you don't like much", 
 				choice1: "Go with her unwillingly",
-				choice2: "tell her you don't like that place and if you can go some other place",
-				choice3: "tell her that we can go this time but we should go to a place of your choice next time",
-				choice4: "punch her"
+				choice2: "Ask to go somewhere else",
+				choice3: "Tell her yes but you want to choose next time",
+				choice4: "Tell her she has bad taste"
 			},{
 				image: "/images/2019-02-07",
-				story: "When you firend is being mean to your common firend", 
-				choice1: "being mean as well",
-				choice2: "tell her to not be mean" ,
-				choice3: "start reading shakespeare out loud",
-				choice4: "punch her"
-			}];
+				story: "Your friend is being mean to your common friend", 
+				choice1: "Be mean as well",
+				choice2: "Tell her to not be mean" ,
+				choice3: "Start reading shakespeare out loud",
+				choice4: "Punch her"			}];
 
 var num = 0;  
 var score = 0;
@@ -81,7 +78,7 @@ function choicesfunction() {
 		$('.choices').hide(500);
 		$('#story').hide(500);
 		$('#storyImg').hide(500);
-		score = parseInt((score/ (num*4) )*5);
+		score = parseInt(((score+4)/ (num*4) )*5);
 		console.log("score out of five is" + score);
 		if (score==5) {
 			$('#Joy').show();
