@@ -6,6 +6,7 @@ function initializePage(){
 	console.log("graph javascript connected ");
 	google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawWeekChart);
+  google.charts.setOnLoadCallback(drawDetailChart);
 }
 
 function drawWeekChart() {
@@ -62,6 +63,7 @@ function drawWeekChart() {
 }
 
 function drawDetailChart(){
+ console.log("drawDetailChart called");
  var oldData = google.visualization.arrayToDataTable([
       ['Name', 'Popularity'],
       ['Cesar', 250],
@@ -78,18 +80,14 @@ function drawDetailChart(){
       ['Eric', 1500]
     ]);
 
-    var colChartBefore = new google.visualization.ColumnChart(document.getElementById('colchart_before'));
+    /*var colChartBefore = new google.visualization.ColumnChart(document.getElementById('colchart_before'));
     var colChartAfter = new google.visualization.ColumnChart(document.getElementById('colchart_after'));
-    var colChartDiff = new google.visualization.ColumnChart(document.getElementById('colchart_diff'));
+    var colChartDiff = new google.visualization.ColumnChart(document.getElementById('colchart_diff'));*/
     var barChartDiff = new google.visualization.BarChart(document.getElementById('barchart_diff'));
 
     var options = { diff: { newData: { widthFactor: 0.8 } } };
-
-    colChartBefore.draw(oldData, options);
-    colChartAfter.draw(newData, options);
-
     var diffData = colChartDiff.computeDiff(oldData, newData);
-    colChartDiff.draw(diffData, options);
+    //colChartDiff.draw(diffData, options);
     barChartDiff.draw(diffData, options);
 }
 
