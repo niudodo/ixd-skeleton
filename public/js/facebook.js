@@ -26,7 +26,9 @@ function changeUser(response){
   window.location.href='/home';
   var pictureLink = response.picture.data.url;
   localStorage.setItem('fbPicture', pictureLink);
+  console.log("picture of Facebook uploaded");
   var username = response.name;
   localStorage.setItem('fbUsername', username);
+  console.log("username of facebook uploaded");
   console.log(pictureLink);
 }
