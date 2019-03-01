@@ -20,18 +20,20 @@ function drawChart() {
    // ['F', 1, 4, 2, 0, 2, 0, ''],
     //['S', 1, 2, 2, 0, 1, 1, '']
   ['Day', 'Score'],
-  [1, 1],
-  [2, 2],
-  [3, 3],
-  [4, 4],
-  [5, 5] 
+  [1, 3],
+  [2, 4],
+  [3, 2],
+  [4, 1],
+  [5, 4],
+  [6, 5],
+  [7, 3] 
 
   ]);
 
   var options = {
     width:300,
     height:300,
-    hAxis: {title: 'Day', minValue: 1, maxValue: 5},
+    hAxis: {title: 'Day', minValue: 1, maxValue: 7},
     vAxis: {title: 'Score', mineValue:0, maxValue: 5},
     legend: 'none'
 
