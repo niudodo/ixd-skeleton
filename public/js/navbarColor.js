@@ -1,12 +1,12 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
-  initializePage();
+  changeColor();
 })
 var pagePath=window.location.pathname;
 /*
  * Function that is called when the document is ready.
  */
-function initializePage() {
+function changeColor() {
   console.log("navbar js connected");
   if(pagePath=="/home"){
     $("#homeNav").css("background-color","#C7CBD1" );
