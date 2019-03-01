@@ -1,12 +1,12 @@
 var data =  [
-			{	image: "/images/2019-02-07",
+			{	image: "/images/story1.png",
 				story: "Your friend randomly starts crying", 
 				choice1: "Cry with her",
 				choice2: "Ask them if anything is wrong",
 				choice3: "Remain serious and ignore her",
 				choice4: "Tell her to stop crying and suck it up"}, 
 			{
-				image: "/images/2019-02-07",
+				image: "/images/2019-02-07.png",
 				story: "Your friend is ignoring your texts", 
 				choice1: "Start crying",
 				choice2: "Ask them if anything is wrong",
@@ -14,7 +14,7 @@ var data =  [
 				choice4: "Call and yell at them"
 			},
 			{
-				image: "/images/2019-02-07",
+				image: "/images/2019-02-07.png",
 				story: "Your friend is being sassy and you don't know why",
 				choice1: "Be sassy back",
 				choice2: "Ask her if anything is wrong",
@@ -63,12 +63,14 @@ $(document).ready(function(){
 function choicesfunction() {
 	console.log("choices Function called ");
 	var story = JSON.stringify((data[num]["story"]));
+	var imgSrc= JSON.stringify((data[num]["image"]));
 	var choice1 = JSON.stringify((data[num]["choice1"]));
 	console.log(choice1);
 	var choice2 = JSON.stringify((data[num]["choice2"]));
 	var choice3 = JSON.stringify((data[num]["choice3"]));
 	var choice4 = JSON.stringify((data[num]["choice4"]));
 	$('#story').text(story);
+	$('#storyImg').attr(imgSrc);
 	$('#choice1').text(choice1);
 	$('#choice2').text(choice2);
 	$('#choice3').text(choice3);
