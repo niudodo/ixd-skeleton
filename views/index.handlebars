@@ -12,13 +12,15 @@
 
 	<link href="/css/introHCI.css" rel="stylesheet">
 	{{>facebook}}
+	{{>google}}
 	<script src="/js/facebook.js"></script>
 </head>
 
 <body>
 	<!-- This is the top panel of website with bottom -->
 	{{>header}}
-	
+
+	<!--Beginning of container-->
 	<div class="container">
 		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
 		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
@@ -36,6 +38,7 @@
 		<!-- Last advice section -->
 		<div style="padding: 5px; border: 2px; border-style: solid; border-color: #E6E6E6; margin-bottom: 10px;">
 			<button id="adviceHome" onclick="window.location.href='/advices';">Last Advice</button>
+			<!--starting of loop advices-->
 			<div>
 				<table>
 					{{#each advices}}
@@ -49,8 +52,12 @@
 					{{/each}}
 				</table>
 			</div>
+			<!--end of advice loop-->
 		</div>
+		<!--end of advice section--> 
 	</div>
+	<!--end of container--> 
+	
 	<!-- this is the bottom navbar-->
 	{{>navbar}}
 
