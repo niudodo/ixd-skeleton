@@ -1,4 +1,4 @@
-var data =  [
+var datafrnd =  [
 			{	image: "/images/story1.png",
 				story: "Your friend randomly starts crying", 
 				choice1: "Cry with her",
@@ -99,7 +99,14 @@ $(document).ready(function(){
 });
 
 function choicesfunction() {
+	var data;
 	console.log("choices Function called ");
+	if(window.location.pathname=="/storyline/family"){
+		data = datafam;
+	}else{
+		data = datafrnd;
+	}
+
 	var story = JSON.stringify((data[num]["story"]));
 	var imgSrc= JSON.stringify((data[num]["image"]));
 	var choice1 = JSON.stringify((data[num]["choice1"]));
