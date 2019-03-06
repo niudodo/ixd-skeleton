@@ -11,6 +11,11 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 	<link href="/css/introHCI.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="/js/graph.js"></script>
+	<script src="/js/navbarColor.js"></script>
 	{{>facebook}}
 	{{>google}}
 
@@ -31,7 +36,7 @@
 		<hr>
 
 		<!-- Storyline button-->
-		<input type=button id="strtStrylnB" onclick="window.location.href='/storyline';storylineClickVerB()" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
+		<input type=button id="strtStryln" onclick="window.location.href='/storyline';storylineClickVerB()" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
 		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
 		</input> 
 		<!--end of storyline button-->
@@ -54,11 +59,5 @@
 
 	<!-- this is the bottom navbar-->
 	{{>navbar}}
-
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script src="/js/graph.js"></script>
-	<script src="/js/navbarColor.js"></script>
 </body>
 </html>
