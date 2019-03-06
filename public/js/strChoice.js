@@ -1,12 +1,12 @@
 var datafrnd =  [
-			{	image: "/images/story1.png",
+			{	image: '../images/friend3.png',
 				story: "Your friend randomly starts crying", 
 				choice1: "Cry with her",
 				choice2: "Ask them if anything is wrong",
 				choice3: "Remain serious and ignore her",
 				choice4: "Tell her to stop crying and suck it up"}, 
 			{
-				image: "/images/2019-02-07.png",
+				image: "../images/friend4.png",
 				story: "Your friend is ignoring your texts", 
 				choice1: "Start crying",
 				choice2: "Ask them if anything is wrong",
@@ -14,28 +14,28 @@ var datafrnd =  [
 				choice4: "Call and yell at them"
 			},
 			{
-				image: "/images/2019-02-07.png",
+				image: "../images/2019-02-07.png",
 				story: "Your friend is being sassy and you don't know why",
 				choice1: "Be sassy back",
 				choice2: "Ask her if anything is wrong",
 				choice3: "Don't react",
 				choice4: "Tell her she's a bad friend"
 			},{	
-				image: "/images/2019-02-07",
+				image: "../images/friend5.png",
 				story: "Your friend is complaining to you about the same thing over and over", 
 				choice1: "Say 'can you be quiet for even a sec??'",
 				choice2: "Listen quietly",
 				choice3: "Help her with the issue and give advice",
 				choice4: "Roll your eyes and say 'this again?'"
 			},{	
-				image: "/images/2019-02-07", 
+				image: "../images/friend1.png", 
 				story: "Your friend wants to go to a restaurant you don't like much", 
 				choice1: "Go with her unwillingly",
 				choice2: "Ask to go somewhere else",
 				choice3: "Tell her yes but you want to choose next time",
 				choice4: "Tell her she has bad taste"
 			},{
-				image: "/images/2019-02-07",
+				image: "../images/friend6.png",
 				story: "Your friend is being mean to your common friend", 
 				choice1: "Be mean as well",
 				choice2: "Tell her to not be mean" ,
@@ -106,21 +106,6 @@ function choicesfunction() {
 	}else{
 		data = datafrnd;
 	}
-
-	var story = JSON.stringify((data[num]["story"]));
-	var imgSrc= JSON.stringify((data[num]["image"]));
-	var choice1 = JSON.stringify((data[num]["choice1"]));
-	console.log(choice1);
-	var choice2 = JSON.stringify((data[num]["choice2"]));
-	var choice3 = JSON.stringify((data[num]["choice3"]));
-	var choice4 = JSON.stringify((data[num]["choice4"]));
-	$('#story').text(story);
-	$('#storyImg').attr(imgSrc);
-	$('#choice1').text(choice1);
-	$('#choice2').text(choice2);
-	$('#choice3').text(choice3);
-	$('#choice4').text(choice4);
-	num++;
 	if(num==6){
 		$('.choices').hide(500);
 		$('#story').hide(500);
@@ -151,7 +136,24 @@ function choicesfunction() {
 		//$('h4').text("A low score correlates with a lower mood. A '5' would be very happy and a '1' would be very sad");
 		//$('#strchart').show();
 		$('#seeadvice').show()
-	}
+	} else{
+	var story = JSON.stringify((data[num]["story"]));
+	var imgSrc= JSON.stringify((data[num]["image"])).replace('\"','');
+	imgSrc = imgSrc.replace('\"','');
+	console.log(imgSrc);
+	var choice1 = JSON.stringify((data[num]["choice1"]));
+	console.log(choice1);
+	var choice2 = JSON.stringify((data[num]["choice2"]));
+	var choice3 = JSON.stringify((data[num]["choice3"]));
+	var choice4 = JSON.stringify((data[num]["choice4"]));
+	$('#story').text(story);
+	$('#storyImg').attr('src', imgSrc);
+	$('#choice1').text(choice1);
+	$('#choice2').text(choice2);
+	$('#choice3').text(choice3);
+	$('#choice4').text(choice4);
+	}	
+	num++;
 }
 
 function buttonClick(e){
