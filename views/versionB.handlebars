@@ -12,6 +12,17 @@
 
 	<link href="/css/introHCI.css" rel="stylesheet">
 	{{>facebook}}
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-134921112-3');
+		ga('create', 'UA-134921112-3', 'auto');
+		ga('send', 'pageview');
+		function storylineClickVerB(event){
+			ga('send', 'event','versionB', 'click', 'verBStorylineButton'); 
+		} 
+	</script>
 	<script src="/js/facebook.js"></script>
 </head>
 
@@ -29,7 +40,7 @@
 		<hr>
 
 		<!-- Storyline button-->
-		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
+		<input type=button id="strtStryln" onclick="window.location.href='/storyline';storylineClickVerB()" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
 		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
 		</input> 
 		<!--end of storyline button-->
