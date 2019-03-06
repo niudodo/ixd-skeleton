@@ -12,11 +12,16 @@
 
 	<link href="/css/introHCI.css" rel="stylesheet">
 	{{>facebook}}
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134921112-4"></script>
+		
 	<script>
 		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
+		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		gtag('config', 'UA-134921112-3');
+
+		gtag('config', 'UA-134921112-4');
+
 		ga('create', 'UA-134921112-3', 'auto');
 		ga('send', 'pageview');
 		function storylineClickVerB(event){
