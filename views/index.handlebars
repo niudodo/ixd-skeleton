@@ -19,6 +19,14 @@
 	{{>facebook}}
 	{{>google}}
 	<script src="/js/facebook.js"></script>
+	<script type="text/javascript">
+		function strtStrylnVerAClick(event){
+			console.log("strtStrylnVerAClick called");
+			event.preventDefault();
+			ga('send','event','versionA','storyline-button-click');
+			window.location.href='/storyline';
+		}
+	</script>
 </head>
 
 <body>
@@ -27,7 +35,7 @@
 
 	<!--Beginning of container-->
 	<div class="container">
-		<input type=button id="strtStryln" onclick="window.location.href='/storyline';" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
+		<input type=button id="strtStryln" onclick='strtStrylnVerAClick(event)';" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
 		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
 		</input>
 
