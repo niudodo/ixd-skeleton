@@ -42,6 +42,44 @@ var data =  [
 				choice3: "Start reading shakespeare out loud",
 				choice4: "Punch her"			}];
 
+var datafam = [
+			{	image: "/images/Family1.png",
+				story: "You don't have much to talk about with your friend", 
+				choice1: "Call and invite them to mini-golf",
+				choice2: "Text 'So what's new?'",
+				choice3: "Accept that you're not friends anymore",
+				choice4: "Ask them to put more effort into the convo"},
+			{	image: "/images/story1.png",
+				story: "They cancel on you but post a story with someone else", 
+				choice1: "Hang out with another friend",
+				choice2: "Reschedule for tomorrow, it'll still be fun",
+				choice3: "Wipe your tears with pizza in between bites",
+				choice4: "Text another friend to complain"},
+			{	image: "/images/story1.png",
+				story: "You know your friend is free but they haven't asked to hang out", 
+				choice1: "Show up to their door with food",
+				choice2: "Send a text asking to hang out",
+				choice3: "Wait for them to text you",
+				choice4: "Check their story to see if they go out"},
+			{	image: "/images/story1.png",
+				story: "Your best friend keeps hanging out with their new friend", 
+				choice1: "Ask to join them. You wanna meet them!",
+				choice2: "Ask when they're free to hang with you",
+				choice3: "Ask to hang out alone for once",
+				choice4: "Ask your friend why they're ditching you"},
+			{	image: "/images/story1.png",
+				story: "Your new friend doesn't get along with your best friend", 
+				choice1: "Invite both to group hangs so they become friends",
+				choice2: "See what they think and go from there",
+				choice3: "Hang out with them separately",
+				choice4: "Only hang out with the new friend"},
+			{	image: "/images/story1.png",
+				story: "Your best friend talked bad about you to your other friend", 
+				choice1: "Talk to your BFF about it to work it out",
+				choice2: "Tell them you felt weird hearing about it",
+				choice3: "Pretend it didn't happen",
+				choice4: "Talk bad about her to the same friend"}];
+
 var num = 0;  
 var score = 0;
 
