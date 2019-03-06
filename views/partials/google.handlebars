@@ -5,7 +5,9 @@
     m=s.getElementsByTagName(o)
     [0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    
   ga('create', 'UA-134921112-3', 'auto');
   ga('send', 'pageview');
+  $('#strtStryln').click(function(event){
+  	ga('send', 'event', 'versionAB','click','storyline-button-clicked');
+  });
 </script>

@@ -12,20 +12,7 @@
 
 	<link href="/css/introHCI.css" rel="stylesheet">
 	{{>facebook}}
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134921112-3"></script>
-	<script>
-	  console.log("google script called");
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'UA-134921112-3');
-	  ga('create', 'UA-134921112-3', 'auto');
-	  ga('send', 'pageview');
-	  $('#strtStrylnB').click(function (event){
-	  	ga('send', 'event', 'versionB', 'click','verB-home-storyline-click');
-	  });
-	</script>
+	{{>google}}
 
 	<script src="/js/facebook.js"></script>
 </head>
