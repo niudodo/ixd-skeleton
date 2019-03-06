@@ -5,8 +5,11 @@ $(document).ready(initializePage);
 function initializePage(){
 	console.log("graph javascript connected ");
 	google.charts.load('current', {'packages':['corechart']});
+
   google.charts.setOnLoadCallback(drawWeekChart);
-  google.charts.setOnLoadCallback(drawDetailChart);
+  if(window.location.pathname=="/statistics"){
+    google.charts.setOnLoadCallback(drawDetailChart);
+  }
 }
 
 function drawWeekChart() {
