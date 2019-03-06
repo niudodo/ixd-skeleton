@@ -90,7 +90,7 @@ function drawDetailChart(){
     var barChartDiff = new google.visualization.BarChart(document.getElementById('barchart_diff'));
 
     var options = { 
-      diff: { newData:{widthFactor: 0.6, color:'#FCAC2C'}},
+      diff: { newData:{widthFactor: 0.6, color:'#FF9893'}},
       legend: { position: 'top'},
     };
     var diffData = barChartDiff.computeDiff(oldData, newData);
