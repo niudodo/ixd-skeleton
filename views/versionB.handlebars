@@ -21,11 +21,9 @@
 
 	<script src="/js/facebook.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#strtStryln').click(function(event){
-				ga('send','click','versionB','storyline-button-click');
-			})
-		});
+		function strtStrylnVerBClick(event){
+			ga('send','click','versionB','storyline-button-click');
+		}
 
 	</script>
 </head>
@@ -44,7 +42,7 @@
 		<hr>
 
 		<!-- Storyline button-->
-		<input type=button id="strtStryln" onclick="window.location.href='/storyline'" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
+		<input type=button id="strtStryln" onclick="window.location.href='/storyline';strtStrylnVerBClick()" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
 		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
 		</input> 
 		<!--end of storyline button-->
