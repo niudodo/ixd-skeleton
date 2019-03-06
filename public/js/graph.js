@@ -8,7 +8,7 @@ function initializePage(){
 
   google.charts.setOnLoadCallback(drawWeekChart);
   if(window.location.pathname=="/statistics"){
-    google.charts.setOnLoadCallback(drawDetailChart);
+  	google.charts.setOnLoadCallback(drawDetailChart);
   }
 }
 
@@ -90,7 +90,10 @@ function drawDetailChart(){
     var colChartDiff = new google.visualization.ColumnChart(document.getElementById('colchart_diff'));*/
     var barChartDiff = new google.visualization.BarChart(document.getElementById('barchart_diff'));
 
-    var options = { diff: { newData: { widthFactor: 0.8, opacity:0.1}}};
+    var options = { 
+      diff: { newData:{widthFactor: 0.6, color:'#FCAC2C'}},
+      legend: { position: 'top'},
+    };
     var diffData = barChartDiff.computeDiff(oldData, newData);
     //colChartDiff.draw(diffData, options);
     barChartDiff.draw(diffData, options);

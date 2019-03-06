@@ -16,44 +16,45 @@
 <body>
   <!-- This is the top panel of website with bottom -->
   {{>header}}
-<center>
-  <div class="container">
-    <img id="storyImg" src="../images/2019-02-07.png" class="img-responsive" alt="strylnimg1">
-    <h2></h2>
-    <h4></h4>
-    <h5 id="story"></h5>
-    <button id="1" class="choices center-block" style="height:35px;width:100%; margin-bottom: 15px;"><a href="#"></a>
-      <p id="choice1"></p>
-    </button>
-    
-    <button id="2" class="choices center-block" style="height:35px;width:100%; margin-bottom: 15px;" ><a href="#"></a>
-      <p id="choice2"> </p>
-    </button>
-  
-    <button id="3" class="choices center-block" style="height:35px;width:100%; margin-bottom: 15px;" ><a href="#"></a>
-      <p id="choice3"></p>
-    </button>
-   
-    <button id="4" class="choices center-block" style=" height:35px;width:100%; margin-bottom: 20px;" ><a href="#"></a>
-      <p id= "choice4"></p>
-    </button>
-  </div>
+  <center>
+    <!--beginning of container-->
+    <div class="container">
+      <img id="storyImg" src="../images/2019-02-07.png" class="img-responsive" alt="strylnimg1">
+      <h2></h2>
+      <h4></h4>
+      <h5 id="story"></h5>
+      <button id="1" class="choices center-block" style="height:35px;width:100%; margin-bottom: 15px;"><a href="#"></a>
+        <p id="choice1"></p>
+      </button>
+      
+      <button id="2" class="choices center-block" style="height:35px;width:100%; margin-bottom: 15px;" ><a href="#"></a>
+        <p id="choice2"> </p>
+      </button>
 
-  <img id="Joy" src="../images/Joy.png" class="img-responsive" alt="JoyImg"></img>
-  <img id="Happy" src="../images/Happy.png" class="img-responsive" alt="HappyImg"></img>
-  <img id="Mediocre" src="../images/Mediocre.png" class="img-responsive" alt="MediocreImg"></img>
-  <img id="Sad" src="../images/Sad.png" class="img-responsive" alt="SadImg"></img>
-  <img id="Angry" src="../images/Angry.png" class="img-responsive" alt="AngryImg"></img>
-  <!-- show graph after complete-->
-  <!-- <div id='strchart' style="vertical-align: center;"></div> -->
+      <button id="3" class="choices center-block" style="height:35px;width:100%; margin-bottom: 15px;" ><a href="#"></a>
+        <p id="choice3"></p>
+      </button>
+     
+      <button id="4" class="choices center-block" style=" height:35px;width:100%; margin-bottom: 20px;" ><a href="#"></a>
+        <p id= "choice4"></p>
+      </button>
+    </div><!--end of container-->
 
-  <!-- <div id='strchart'></div> -->
 
-  <!-- See advice button-->
-  <div>
-    <button id="seeadvice" class="center-block" onclick="window.location.href='/advices';">See Advice!</button>
-  </div>
-</center>
+    <img id="Joy" src="../images/Joy.png" class="img-responsive" alt="JoyImg" style="width:200px; height:200px;"></img>
+    <img id="Happy" src="../images/Happy.png" class="img-responsive" alt="HappyImg" style="width:200px; height:200px;"></img>
+    <img id="Mediocre" src="../images/Mediocre.png" class="img-responsive" alt="MediocreImg" style="width:200px; height: 200px;"></img>
+    <img id="Sad" src="../images/Sad.png" class="img-responsive" alt="SadImg" style="width:200px; height:200px;"></img>
+    <img id="Angry" src="../images/Angry.png" class="img-responsive" alt="AngryImg" style="width:200px; height:200px;"></img>
+    <!-- show graph after complete-->
+    <!-- <div id='strchart' style="vertical-align: center;"></div> -->
+
+    <!-- <div id='strchart'></div> -->
+
+    <!-- See advice button-->
+    <div>
+      <button id="seeadvice" class="center-block" onclick="window.location.href='/advices';">See Advice!</button>
+    </div></center><!--end of container-->
 
   <!--this is the buttom nav bar -->
   {{>navbar}}
@@ -63,6 +64,6 @@
   <script src="/js/bootstrap.min.js"></script>
   <script src="/js/strChoice.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script src="/js/strgraph.js"></script>
+  <!--<script src="/js/strgraph.js"></script>-->
 </body>
 </html>
