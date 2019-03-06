@@ -52,10 +52,10 @@ function drawWeekChart() {
     bar: { groupWidth: '75%' },
     isStacked: true,
     series: {
-        0:{color:'#FCAC2C'},
+        0:{color:'#F8E896'},
         //1:{color:'#FFC466'},
         //2:{color:'#FFD799'},
-        1:{color:'#006384'},
+        1:{color:'#53B8D1'},
         //4:{color:'#0085B2'},
         //5:{color:'#00ABE5'}
     }
