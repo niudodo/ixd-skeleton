@@ -1,0 +1,73 @@
+<!doctype html>
+<meta name ="viewport" content="width=device-width,initial-scale= 1.0">
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<!-- for icon library-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link href="/css/introHCI.css" rel="stylesheet">
+	{{>facebook}}
+	<script>
+		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-134921112-3');
+		ga('create', 'UA-134921112-3', 'auto');
+		ga('send', 'pageview');
+		function storylineClickVerB(event){
+			ga('send', 'event','versionB', 'click', 'verBStorylineButton'); 
+		} 
+	</script>
+	<script src="/js/facebook.js"></script>
+</head>
+
+<body>
+	<!-- This is the top panel of website with bottom -->
+	{{>header}}
+	
+	<!--beginning of container-->
+	<div class="container">
+		<!-- Quick statistics section -->
+		<h3 style="text-align: center; margin-bottom: 20px;">Here's your weekly report</h3>
+		<!-- GOOGLE GRAPH API -->
+		<div id="chart"></div>
+		<!--<img src="/images/graph.png" class="img-responsive"> </img>-->
+		<hr>
+
+		<!-- Storyline button-->
+		<input type=button id="strtStryln" onclick="window.location.href='/storyline';storylineClickVerB()" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
+		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
+		</input> 
+		<!--end of storyline button-->
+		<hr>
+		<!-- Last advice section -->
+		<div style="padding: 5px; border: 2px; border-style: solid; border-color: #E6E6E6; margin-bottom: 10px;">
+			<button id="adviceHome" onclick="window.location.href='/advices';">Last Advice</button>
+			<!--each loop for last advices-->
+			<div><table>{{#each advices}}
+				<tr>
+					<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{date}}</td>>
+					<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{description}}</td>
+					<th style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{status}}</th>
+				</tr>
+			{{/each}}</table></div>
+			<!--end of each loop-->
+		</div>
+		<!--end of last advice section-->
+	</div><!--end of container-->
+
+	<!-- this is the bottom navbar-->
+	{{>navbar}}
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="/js/graph.js"></script>
+	<script src="/js/navbarColor.js"></script>
+</body>
+</html>
