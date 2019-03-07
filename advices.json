@@ -1,25 +1,25 @@
 { "advices" : [
 		{
-			"type":"FRIEND TEMPER",
+			"type":"CASUAL FRIEND ISSUES",
 			"description":"Why wait for them to approach you? Start a conversation. It will only give you answers.",
 			"status":false,
 			"date":"2/13/19"
 		},
 		{
-			"type":"FRIEND TEMPER",
+			"type":"BEST FRIEND ISSUES",
 			"description":"Think for 1 min before yelling at your friend.",
 			"status":true,
 			"date":"2/11/19"
 		},
 
 		{
-			"type":"FAMILY ISSUE",
-			"description":"Don't keep it all inside. Your parents will be happy to hear your perspective and you'll feel better, too!",
+			"type":"BEST FRIEND ISSUES",
+			"description":"Distract yourself for a bit. Don't let anger make things worse.",
 			"status":false,
 			"date":"2/10/19"
 		},
 		{
-			"type":"SELF GROW",
+			"type":"NEW FRIEND ISSUES",
 			"description":"Sometimes you have to own up to your mistakes. You can only grow from it!",
 			"status":true,
 			"date":"2/9/19"
