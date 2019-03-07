@@ -8,6 +8,8 @@ function initializePage(){
   google.charts.setOnLoadCallback(drawWeekChart);
   if(window.location.pathname=="/statistics"){
   	google.charts.setOnLoadCallback(drawDetailChart);
+	google.charts.setOnLoadCallback(drawBasic);
+	google.charts.setOnLoadCallback(drawChart);
   }
 }
 
@@ -99,56 +101,49 @@ function drawDetailChart(){
     barChartDiff.draw(diffData, options);
 }
 
-google.charts.load('current', {packages: ['corechart', 'bar']});
-google.charts.setOnLoadCallback(drawBasic);
-
 function drawBasic() {
+  var dataset = google.visualization.arrayToDataTable([
+    ['Relationship', 'Score'],
+    ['Casual Friend', 8],
+    ['Close Friend', 7],
+    ['Best Friend', 8],
+    ['Aquaintance', 9],
+    ['New Friend', 10]
+  ]);
 
-      var dataset = google.visualization.arrayToDataTable([
-        ['Relationship', 'Score'],
-        ['Casual Friend', 8],
-        ['Close Friend', 7],
-        ['Best Friend', 8],
-        ['Aquaintance', 9],
-        ['New Friend', 10]
-      ]);
+  var options = {
+    series: {
+      0:{color: '#53B8D1'}
+    },
+    chartArea: {width: '50%'},
+    legend: {position: 'top', alignment: 'center'},
+    hAxis: {
+      minValue: 0},
+    };
 
-      var options = {
-        series: {
-          0:{color: '#53B8D1'}
-        },
-        chartArea: {width: '50%'},
-        legend: {position: 'top', alignment: 'center'},
-        hAxis: {
-          minValue: 0},
-        };
+  var lastchart = new google.visualization.BarChart(document.getElementById('lastchart'));
 
-      var lastchart = new google.visualization.BarChart(document.getElementById('lastchart'));
-
-      lastchart.draw(dataset, options);
-    }
-
-google.charts.load("current", {packages:["corechart"]});
-google.charts.setOnLoadCallback(drawChart);
+  lastchart.draw(dataset, options);
+}
       
-      function drawChart() {
-        var data3 = google.visualization.arrayToDataTable([
-          ['Advice', 'Amount this Week'],
-          ['Complete', 2],
-          ['Incomplete', 1]
-        ]);
+function drawChart() {
+	var data3 = google.visualization.arrayToDataTable([
+	  ['Advice', 'Amount this Week'],
+	  ['Complete', 2],
+	  ['Incomplete', 1]
+	]);
 
-        var options = {
-          pieHole: 0.4,
-          pieStartAngle: 270,
-          pieSliceText: 'value',
-          legend: {position: 'top', alignment: 'center'},
-          slices: {
-            0:{color:'#53B8D1'},
-            1:{color:'#FF9893'},
-            }
-        };
+	var options = {
+	  pieHole: 0.4,
+	  pieStartAngle: 270,
+	  pieSliceText: 'value',
+	  legend: {position: 'top', alignment: 'center'},
+	  slices: {
+	    0:{color:'#53B8D1'},
+	    1:{color:'#FF9893'},
+	    }
+	};
 
-        var donutchart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        donutchart.draw(data3, options);
-      }
+	var donutchart = new google.visualization.PieChart(document.getElementById('donutchart'));
+	donutchart.draw(data3, options);
+}
