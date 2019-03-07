@@ -48,20 +48,35 @@
 		</input> 
 		<!--end of storyline button-->
 		<hr>
+		
 		<!-- Last advice section -->
-		<div style="padding: 5px; border: 2px; border-style: solid; border-color: #E6E6E6; margin-bottom: 10px;">
-			<button id="adviceHome" onclick="window.location.href='/advices';">Last Advice</button>
-			<!--each loop for last advices-->
-			<div><table>{{#each advices}}
-				<tr>
-					<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{date}}</td>>
-					<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{description}}</td>
-					<th style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{status}}</th>
-				</tr>
-			{{/each}}</table></div>
-			<!--end of each loop-->
+		<div style="padding: 5px; border: 3px; border-style: solid; border-color: #E6E6E6; border-radius: 4px; margin-bottom: 10px;">
+		
+		
+		<h3 style="text-align: center; color: #6B6B6C;">Jump back in!</h3>	
+		<h4 style="text-align: center; color: #6B6B6C;">Get started on these incomplete advice.</h4>
+			<!--starting of loop advices-->
+			<div>
+				<table style="color: #6B6B6C;">
+					{{#each advices}}
+						{{#unless status}}
+						<tr>
+						<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{date}}</td>>
+						<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{description}}</td>
+						<th style="padding: 5px 8px; border-bottom: 1px solid #ddd;">Incomplete</th>
+						</tr>
+						{{/unless}}
+					{{/each}}
+				</table>
+			</div>
+			<!--end of advice loop-->
+			<!--Go to advice button-->
+			<br>
+			<center>
+				<button id="adviceHome" onclick="window.location.href='/advices';">See Last Advice</button>
+			</center>
 		</div>
-		<!--end of last advice section-->
+		<!-- end of advice section -->
 	</div><!--end of container-->
 
 	<!-- this is the bottom navbar-->
