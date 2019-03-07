@@ -26,9 +26,9 @@
       <hr>
 
       <!-- Positive vs Negative feelings -->
-        <center><h4 style="color:#5FB27D;">Positive/Negative Feelings</h4></center>
-        <p style="text-align: center; margin: 0 5px;">How many times you've logged positive and negative feelings each day of this week</p>
-        <hr>
+        <center><h4>Positive/Negative Feelings</h4></center>
+        <p style="text-align: center; margin: 0 5px; color: #6B6B6C;">How many times you've logged positive and negative feelings each day of this week</p>
+        <br>
       
         <!-- Add This week's statistics chart here-->
         <!-- GOOGLE GRAPH API -->
@@ -37,25 +37,38 @@
         <hr>
 
       <!-- Emotions this week -->
-        <center><h4 style="color:#5FB27D;">Emotions this Week</h4></center>
-        <p style="text-align: center; margin: 0 5px;">How many times you've logged each feeling this week VS your goals for each</p>
-        <hr>
-      
+        <center><h4>Emotions this Week</h4></center>
+        <p style="text-align: center; margin: 0 5px; color: #6B6B6C;">How many times you've logged each feeling this week VS your goals for each</p>
+        <br>
+
         <!--detail chart, the blue one-->
         <div id="barchart_diff"></div>
         <hr>
 
       <!-- Advice completed-->
       <div>
-        <center><h4 style="color:#5FB27D;">Advice Progress</h4></center>
-        <center><p>Amount of advice you've completed this week:</p></center>
-        <center><p>2 pieces</p></center>
+        <center><h4>Advice Progress</h4></center>
+        <center><p style="color: #6B6B6C;">Amount of advice you've completed this week:</p></center>
+        <br>
+        <!-- donut chart for advice -->
+        <div id="donutchart"></div>
       </div>
+
+      <!-- Score for each relationship -->
+      <hr>
+      <center>
+        <h4>Effortful Relationships</h4>
+        <p style="text-align: center; margin: 0 5px; color: #6B6B6C;">How much effort are you putting into solving problems in each relationship?</p>
+      </center>
+      <br>
+
+        <!-- graph -->
+        <div id="lastchart"></div>
     </div> <!--end of border?-->
-    <hr>
     <!-- Add Average weekly score from storyline, % improved from previous week, etc-->
     <br>
-    <div style="margin-bottom: 20px;">
+    
+    <!--<div style="margin-bottom: 20px;">
       <h3>Effortful Relationships:</h3>
       <p>How much effort are you putting into solving problems in each relationship?</p>
       <br>
@@ -81,8 +94,9 @@
           <th>9/10</th>
         </tr>
       </table>
-    </div> <!--end of margin bottom-->
-  </div><!--end of container-->
+    </div> --><!--end of margin bottom--> 
+  </div><!--end of container--> 
+
   <!-- this is the bottom navbar-->
   {{>navbar}}
 

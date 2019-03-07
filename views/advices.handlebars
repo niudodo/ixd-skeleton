@@ -20,17 +20,17 @@
   <!--start of Last Advice-->
   <div class="container">
     <div  style="border: 2px; border-style: solid; border-color: #E6E6E6; margin-top: 20px;">
-      <h2 style="color: #F4BC42; padding-left: 20px;">Last Advice:</h2>
+      <h2 style="color: #53B8D1; padding-left: 20px;">Last Advice:</h2>
 
       <h4 id="logTitle" style="padding-left: 20px;">
         You logged: NEW FRIEND TROUBLE
       </h4>
 
-        <p id="lastAdvice" style="padding-left: 35px;">
+        <p id="lastAdvice" style="padding-left: 35px; color: #6B6B6C;">
           "Why wait for them to approach you? Start a conversation. It will only give you answers."
         </p>
       <!--Last advice: complete button-->
-      <button class="collapsible" id="completeLastAdvice" style="float: left; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6; color: #6E6E6E; text-align: center;"> I DID IT!
+      <button class="collapsible" id="completeLastAdvice" style="float: left; border-radius: 2px; width: 165px; padding:2px 4px; background-color: #E6E6E6; color: #6E6E6E; text-align: center;"> I DID IT!
       </button>
         <div id="contentCompleteAdvice" class="content">
           <br><br>
@@ -44,7 +44,7 @@
         </div>
 
       <!--Last advice: incomplete button-->
-      <button class="collapsible" id="NoToLastAdvice" style="float: right; border-radius: 2px; width: 100px; padding:2px 4px; background-color: #E6E6E6; color: #6E6E6E; text-align: center;"> DELETE 
+      <button class="collapsible" id="NoToLastAdvice" style="float: right; border-radius: 2px; width: 165px; padding:2px 4px; background-color: #E6E6E6; color: #6E6E6E; text-align: center;"> DELETE 
       </button>
         <div id="contentNotCompleteAdvice" class="content">
           <br><br>
@@ -77,12 +77,12 @@
 
     <!--Past Advice Section-->
     <h4 style="float: right;">sort by: DATE</h4>
-    <h3 style="color: #F4BC42">Past Advice</h3>
+    <h3 style="color: #53B8D1">Past Advice</h3>
     {{#each advices}}
       <hr>
       <p style="float: right; color: #E6E6E6;">{{date}}</p>
       <h5>{{type}}</h5>
-        <p>{{description}}</p>
+        <p style="color: #6B6B6C;">{{description}}</p>
     {{/each}}
   </div>
   <!-- this is the bottom navbar-->
@@ -93,6 +93,17 @@
   <script src="/js/adviceDelete.js"></script>
   <script src="/js/navbarColor.js"></script>
 
+  <!-- Hide other button if you click complete/delete last advice -->
+  <script type="text/javascript">
+    $('#completeLastAdvice').click(function(){
+        $("#NoToLastAdvice").hide();
+    });
+  </script>
+  <script type="text/javascript">
+    $('#NoToLastAdvice').click(function(){
+        $("#completeLastAdvice").hide();
+    });
+  </script>
   <!-- makes collapsible work-->
   <script>
     var coll = document.getElementsByClassName("collapsible");
