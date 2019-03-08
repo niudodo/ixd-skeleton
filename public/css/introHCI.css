@@ -184,6 +184,27 @@ i {
   padding-bottom: 10px; 
 }
 
+/* intro page background */
+#introBackground {
+  background-color: #53B8D1;
+  height: 100%;
+  width: 100%;
+}
+
+#introDescription {
+  color: white;
+  text-align: center;
+  margin: 15px;
+}
+
+#exitIntro {
+  background-color: #53B8D1;
+  border: none;
+  text-align: center;
+  margin: 15px;
+  float: left;
+}
+
 /* show the dropdown menu on hover */
 .dropdown:hover .dropdown-content{display: block;}
 

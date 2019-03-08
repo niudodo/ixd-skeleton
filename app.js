@@ -21,6 +21,7 @@ var settings = require('./routes/settings');
 var add = require('./routes/add');
 var friend = require('./routes/storyline/friend');
 var family = require('./routes/storyline/family');
+var intro = require('./routes/intro');
 
 
 var app = express();
@@ -59,6 +60,7 @@ app.get('/add',add.addGoals);
 app.get('/add',add.addWorking);
 app.get('/storyline/friend',friend.viewFriend);
 app.get('/storyline/family',family.viewFamily);
+app.get('/intro', intro.viewIntro);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
