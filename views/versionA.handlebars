@@ -1,0 +1,84 @@
+<!doctype html>
+<meta name ="viewport" content="width=device-width,initial-scale= 1.0">
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<!-- for icon library-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link href="/css/introHCI.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="/js/graph.js"></script>
+	<script src="/js/navbarColor.js"></script>
+	{{>facebook}}
+	{{>google}}
+	<script src="/js/facebook.js"></script>
+	<script type="text/javascript">
+		function strtStrylnVerBClick(event){
+			console.log("strtStrylnVerBClick called");
+			event.preventDefault();
+			ga('send','event','versionB','storyline-button-click');
+			window.location.href='/storyline';
+		}
+	</script>
+</head>
+
+<body>
+	<!-- This is the top panel of website with bottom -->
+	{{>header}}
+	
+	<!--beginning of container-->
+	<div class="container">
+		<!-- Quick statistics section -->
+		<h3 style="text-align: center; margin-bottom: 20px;">Here's your weekly report</h3>
+		<!-- Storyline button-->
+		<input type=button id="strtStryln" onclick="strtStrylnVerBClick(event)" class= "center-block" value="Start Storyline" style="margin-top: 20px;  margin-bottom: 10px;">
+		<p style="text-align: center; color: #C7CBD1;">Find out how you're feeling. Click above!</p>
+		</input> 
+		<!--end of storyline button-->
+		<!-- GOOGLE GRAPH API -->
+		<div id="chart"></div>
+		<!--<img src="/images/graph.png" class="img-responsive"> </img>-->
+		<hr>
+		<hr>
+		
+		<!-- Last advice section -->
+		<div style="padding: 5px; border: 3px; border-style: solid; border-color: #E6E6E6; border-radius: 4px; margin-bottom: 10px;">
+		
+		
+		<h3 style="text-align: center;">Jump back in!</h3>	
+		<h4 style="text-align: center; color: #6B6B6C;">Get started on these incomplete advice.</h4>
+			<!--starting of loop advices-->
+			<div>
+				<table style="color: #6B6B6C;">
+					{{#each advices}}
+						{{#unless status}}
+						<tr>
+						<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{date}}</td>>
+						<td style="padding: 5px 8px; border-bottom: 1px solid #ddd;">{{description}}</td>
+						<th style="padding: 5px 8px; border-bottom: 1px solid #ddd;">Incomplete</th>
+						</tr>
+						{{/unless}}
+					{{/each}}
+				</table>
+			</div>
+			<!--end of advice loop-->
+			<!--Go to advice button-->
+			<br>
+			<center>
+				<button id="adviceHome" onclick="window.location.href='/advices';">See Last Advice</button>
+			</center>
+		</div>
+		<!-- end of advice section -->
+	</div><!--end of container-->
+
+	<!-- this is the bottom navbar-->
+	{{>navbar}}
+</body>
+</html>

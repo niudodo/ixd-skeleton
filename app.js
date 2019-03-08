@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var versionB = require('./routes/versionB');
+var versionA = require('./routes/versionA');
 // Example route
 // var user = require('./routes/user');
 var storyline = require('./routes/storyline');
@@ -22,6 +23,7 @@ var add = require('./routes/add');
 var friend = require('./routes/storyline/friend');
 var family = require('./routes/storyline/family');
 var intro = require('./routes/intro');
+
 
 
 var app = express();
@@ -49,6 +51,7 @@ if ('development' == app.get('env')) {
 app.get('/', login.viewLogIn);
 app.get('/home', index.view);
 app.get('/home/versionB', versionB.viewVersionB);
+app.get('/home/versionA', versionA.viewVersionA);
 // Example route
 // app.get('/users', user.list);
 app.get('/storyline', storyline.viewStoryLine);
