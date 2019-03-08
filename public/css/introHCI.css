@@ -194,7 +194,8 @@ i {
 #introDescription {
   color: white;
   text-align: center;
-  margin: 15px;
+  padding: 0 25px;
+  margin: 10px 40px;
 }
 
 #exitIntro {
@@ -203,6 +204,43 @@ i {
   text-align: center;
   margin: 15px;
   float: left;
+}
+
+#startIntro {
+  background-color: white;
+  text-align: center;
+  width: 60%;
+  border-radius: 4px;
+  border-color: #F8E896;
+  position: relative;
+  margin-top: 35%;
+}
+
+#nextIntro {
+  background-color: white;
+  text-align: center;
+  width: 18%;
+  border-radius: 4px;
+  border-color: #F8E896;
+  margin: 15px 20px;
+  float: right;
+}
+
+#backIntro {
+  background-color: white;
+  text-align: center;
+  width: 18%;
+  border-radius: 4px;
+  border-color: #F8E896;
+  float: left;
+  margin: 15px 20px;
+}
+
+#skipTutorial {
+  background-color: #53B8D1;
+  border: none;
+  text-align: center;
+  margin: 10px 20px;
 }
 
 /* show the dropdown menu on hover */

@@ -23,6 +23,8 @@ var add = require('./routes/add');
 var friend = require('./routes/storyline/friend');
 var family = require('./routes/storyline/family');
 var intro = require('./routes/intro');
+var intro2 = require('./routes/intro2');
+var intro3 = require('./routes/intro3');
 
 
 
@@ -64,6 +66,8 @@ app.get('/add',add.addWorking);
 app.get('/storyline/friend',friend.viewFriend);
 app.get('/storyline/family',family.viewFamily);
 app.get('/intro', intro.viewIntro);
+app.get('/intro2', intro2.viewIntro2);
+app.get('/intro3', intro3.viewIntro3);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

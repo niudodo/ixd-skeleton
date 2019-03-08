@@ -16,6 +16,9 @@
 
 <body id="introBackground">
 	<div>
+
+		<!-- Exit intro button --> 
+		<input type="button" id="exitIntro" value="x" style="font-size: 20px;" onclick="window.location.href='/home';">
 		<br><br><br><br>
 
 		<!-- Brand Title-->
@@ -32,17 +35,20 @@
 
 		<br>
 
-		<h1 id="introDescription">Friend issues?</h1>
-		<br><br>
-		<h3 id="introDescription">We all have them. Let's learn how to deal with them!</h3>
-	</div>
+		<!-- Storyline description -->
+		<h1 id="introDescription">Start with our Storyline!</h1>
+		<br>
+		<h3 id="introDescription">1. Choose which friend you're having conflict with</h3>
+		<br>
+		<h3 id="introDescription">2. Play! Go through a story and make decisions</h3>
 
-	<!-- Next part of intro button -->
-		<center>
-			<input type="button" id="startIntro" value="How it works" onclick="window.location.href='/intro2'" style="color: #6E6E6E; font-size: 30px;">
-			<br>
-			<input type="button" id="skipTutorial" value="Skip Tutorial" onclick="window.location.href='/home'" style="color: white; font-size: 20px; text-decoration: underline;">
-		</center>
+		<br>
+		<!-- Next part of intro button -->
+		<input type="button" id="backIntro" value="<" onclick="window.location.href='/intro'" style="color: #6E6E6E; font-size: 30px;">
+		<input type="button" id="nextIntro" value=">" onclick="window.location.href='/intro3'" style="color: #6E6E6E; font-size: 30px;">
+
+		<br><br>
+	</div>
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
