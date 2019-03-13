@@ -43,6 +43,7 @@
   font-size: 25px;
   border-radius: 4px;
   background-color:#53B8D1;
+  border-color: #53B8D1;
 }
 
 /* navbar css*/
@@ -151,6 +152,7 @@ i {
     font-size: 25px;
     border-radius: 4px;
     background-color:#F8E896;
+    border-color: #F8E896;
 }
 
 .jumbotron h1{
@@ -160,7 +162,7 @@ i {
 #adviceHome {
   top:10%;
   align-self: left;
-  width: 150px;
+  width: 50%;
   height:40px;
   font-size: 18px;
   border-radius: 4px;
@@ -194,7 +196,8 @@ i {
 #introDescription {
   color: white;
   text-align: center;
-  margin: 15px;
+  padding: 0 25px;
+  margin: 10px 40px;
 }
 
 #exitIntro {
@@ -203,6 +206,56 @@ i {
   text-align: center;
   margin: 15px;
   float: left;
+}
+
+#startIntro {
+  background-color: white;
+  text-align: center;
+  width: 60%;
+  border-radius: 4px;
+  border-color: #F8E896;
+  position: relative;
+  margin-top: 35%;
+}
+
+#nextIntro {
+  background-color: white;
+  text-align: center;
+  width: 18%;
+  border-radius: 4px;
+  border-color: #F8E896;
+  margin: 15px 20px;
+  float: right;
+}
+
+#backIntro {
+  background-color: white;
+  text-align: center;
+  width: 18%;
+  border-radius: 4px;
+  border-color: #F8E896;
+  float: left;
+  margin: 15px 20px;
+}
+
+#skipTutorial {
+  background-color: #53B8D1;
+  border: none;
+  text-align: center;
+  margin: 10px 20px;
+  width: 
+}
+
+#seeIntro {
+  background-color: #FF9893;
+  border-color: #FF9893;
+  align-self: center;
+  text-align: center;
+  width: 260px;
+  height:70px;
+  font-size: 25px;
+  border-radius: 4px;
+  margin-bottom: 15px;
 }
 
 /* show the dropdown menu on hover */
