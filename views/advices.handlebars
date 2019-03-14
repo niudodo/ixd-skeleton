@@ -54,7 +54,7 @@
             <input type="checkbox" name="" value="Irrelevant">It doesn't apply<br>
             <input type="checkbox" name="vehicle" value="Dislike">Don't like it<br>
             <input type="checkbox" name="" value="Tried before">Have already tried it<br>
-            <input type="checkbox" name="" value="N/a">Don't want to do it<br>
+            <input type="checkbox" name="" value="N/a">Issue is resolved<br>
             <input id="submitBtnDelete" type="submit" value="Submit">
           </form>
         </div>
@@ -74,16 +74,32 @@
       -->
 
     </div>
-    <hr>
-
-    <!--Past Advice Section-->
+    <br><br>
+    <hr style="height: 3px; background-color: #E6E6E6; border: none; margin: 10px 0;">
+    <!--Incomplete Advice Section-->
     <h4 style="float: right;">sort by: DATE</h4>
-    <h3 style="color: #53B8D1">Past Advice</h3>
+    <h3 style="color: #53B8D1">Incomplete</h3>
     {{#each advices}}
+      {{#unless status}}
       <hr>
       <p style="float: right; color: #E6E6E6;">{{date}}</p>
       <h5>{{type}}</h5>
         <p style="color: #6B6B6C;">{{description}}</p>
+      {{/unless}}
+    {{/each}}
+
+    <br>
+    <hr style="height: 3px; background-color: #E6E6E6; border: none; margin: 10px 0;">
+    <!--Complete Advice Section-->
+    <h4 style="float: right;">sort by: DATE</h4>
+    <h3 style="color: #53B8D1">Complete</h3>
+    {{#each advices}}
+      {{#if status}}
+      <hr>
+      <p style="float: right; color: #E6E6E6;">{{date}}</p>
+      <h5>{{type}}</h5>
+        <p style="color: #6B6B6C;">{{description}}</p>
+      {{/if}}
     {{/each}}
   </div>
   <!-- this is the bottom navbar-->
@@ -105,6 +121,18 @@
         $("#completeLastAdvice").hide();
     });
   </script>
+  <!-- Hide feedback after submit --> 
+  <script type="text/javascript">
+    $('#submitBtnDidIt').click(function(){
+        $("#completeLastAdvice").hide();
+    });
+  </script>
+  <script type="text/javascript">
+    $('#submitBtnDelete').click(function(){
+        $("#NoToLastAdvice").hide();
+    });
+  </script>
+
   <!-- makes collapsible work-->
   <script>
     var coll = document.getElementsByClassName("collapsible");

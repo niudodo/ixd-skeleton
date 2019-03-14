@@ -114,23 +114,23 @@ function choicesfunction() {
 		console.log("score out of five is" + score);
 		if (score==5) {
 			$('#Joy').show();
-			$('h2').text("You're mainly feeling joyous! YAY!")
+			$('h2').text("You seem positive! Let's channel that positivity when fixing your problem!")
 		} 
 		else if (score==4) {
 			$('#Happy').show();
-			$('h2').text("You're mainly feeling happy! Keep it up!")
+			$('h2').text("You seem calm! Great starting point to fixing an issue.")
 		}
 		else if (score==3){
 			$('#Mediocre').show();
-			$('h2').text("Why so meh? Remember, problems are temporary!")
+			$('h2').text("Feeling conflicted? Remember that happiness takes work, and you've already started!")
 		}
 		else if (score==2) {
 			$('#Sad').show();
-			$('h2').text("Feeling a bit down? Don't worry, we've got you!")
+			$('h2').text("Feeling a bit down? This issue will pass soon enough. Let's get started on making that happen!")
 		}
 		else if (score==1) {
 			$('#Angry').show();
-			$('h2').text("A bit frustrated? We've all been there! Take a deep breath.")
+			$('h2').text("Frustrated? We've all been there! Take a deep breath before going to advice.")
 		}
 		//$('h2').text("your score is " + score + "/5");
 		//$('h4').text("A low score correlates with a lower mood. A '5' would be very happy and a '1' would be very sad");
