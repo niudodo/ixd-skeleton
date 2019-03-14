@@ -44,6 +44,7 @@
   border-radius: 4px;
   background-color:#53B8D1;
   border-color: #53B8D1;
+  margin-bottom: 3px;
 }
 
 /* navbar css*/
@@ -147,7 +148,7 @@ i {
 #strtStryln{
     top:10%;
     align-self: center;
-    width: 260px;
+    width: 75%;
     height:60px;
     font-size: 25px;
     border-radius: 4px;

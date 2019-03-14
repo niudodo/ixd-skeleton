@@ -114,7 +114,7 @@ function choicesfunction() {
 		console.log("score out of five is" + score);
 		if (score==5) {
 			$('#Joy').show();
-			$('h2').text("You seem positive! Let's channel that positivity when fixing your problem!")
+			$('h2').text("You seem positive! Let's channel that positivity when fixing your problem!");
 		} 
 		else if (score==4) {
 			$('#Happy').show();
