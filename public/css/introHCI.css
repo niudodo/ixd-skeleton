@@ -145,6 +145,16 @@ i {
   right: 40px;
 }
 
+#gotoadvice {
+  width: 60%;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #F8E896;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
 #strtStryln{
     top:10%;
     align-self: center;
@@ -178,11 +188,11 @@ i {
 #seeadvice {
   top:10%;
   align-self: center;
-  width: 150px;
-  height:40px;
+  width: 55%;
+  height: 50px;
   font-size: 18px;
   border-radius: 4px;
-  background-color: #EDEDED;
+  background-color: #F8E896;
   margin-bottom: 20px;
   padding-bottom: 10px; 
 }

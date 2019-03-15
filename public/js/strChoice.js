@@ -96,6 +96,7 @@ $(document).ready(function(){
 	$('#Angry').hide();
 	//$('#strchart').hide();
 	$('#seeadvice').hide(); 
+	$('#gotoadvice').hide();
 });
 
 function choicesfunction() {
@@ -154,6 +155,40 @@ function choicesfunction() {
 	$('#choice4').text(choice4);
 	}	
 	num++;
+}
+
+function seeAdviceClick(event){
+	event.preventDefault();
+	if (score==5) {
+			$('#Joy').hide();
+			$('h2').text("Think about the last time you had fun together. Brush off the tension and ask to hang out!");
+			$('#seeadvice').hide();
+			$('#gotoadvice').show();
+		} 
+		else if (score==4) {
+			$('#Happy').hide();
+			$('h2').text("Think about the problem from their perspective. Get the ball rolling and try apologizing for your part in it.");
+			$('#seeadvice').hide();
+			$('#gotoadvice').show();
+		}
+		else if (score==3){
+			$('#Mediocre').hide();
+			$('h2').text("See the glass half full! Staying positive will help things blow over more quickly.");
+			$('#seeadvice').hide();
+			$('#gotoadvice').show();
+		}
+		else if (score==2) {
+			$('#Sad').hide();
+			$('h2').text("Take time to feel ok before starting a conversation. Watch your favorite TV show or movie.");
+			$('#seeadvice').hide();
+			$('#gotoadvice').show();
+		}
+		else if (score==1) {
+			$('#Angry').hide();
+			$('h2').text("Don't talk until you're ready. Give yourself and your friend time to calm down.");
+			$('#seeadvice').hide();
+			$('#gotoadvice').show();
+		}
 }
 
 function buttonClick(e){

@@ -52,9 +52,16 @@
     <!-- <div id='strchart'></div> -->
 
     <!-- See advice button-->
+    <!-- See advice button-->
     <div>
-      <button id="seeadvice" class="center-block" onclick="window.location.href='/advices';">See Advice!</button>
-    </div></center><!--end of container-->
+    <button id="seeadvice" class="center-block" onclick="seeAdviceClick(event);">See Advice!</button>
+    </div>
+
+    <!-- go to advice page-->
+    <div>
+    <button id="gotoadvice" class="center-block" onclick="window.location.href='/advices'">Go to Advice</button>
+    </div>
+  </center><!--end of container-->
 
   <!--this is the buttom nav bar -->
   {{>navbar}}

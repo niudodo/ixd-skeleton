@@ -11,6 +11,11 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <link href="/css/introHCI.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/strChoice.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!--<script src="/js/strgraph.js"></script>-->
 </head>
 
 <body>
@@ -50,18 +55,16 @@
 
   <!-- See advice button-->
   <div>
-    <button id="seeadvice" class="center-block" onclick="window.location.href='/advices';">See Advice!</button>
+    <button id="seeadvice" class="center-block" onclick="seeAdviceClick(event);">See Advice!</button>
+  </div>
+
+  <!-- go to advice page-->
+  <div>
+    <button id="gotoadvice" class="center-block" onclick="window.location.href='/advices'">Go to Advice</button>
   </div>
 </center>
 
   <!--this is the buttom nav bar -->
   {{>navbar}}
-
-
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/strChoice.js"></script>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <!--<script src="/js/strgraph.js"></script>-->
 </body>
 </html>
